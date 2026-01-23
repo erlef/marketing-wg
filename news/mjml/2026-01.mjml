@@ -1,0 +1,158 @@
+<mjml>
+  <mj-head>
+    <mj-font name="Montserrat" href="https://fonts.googleapis.com/css?family=Montserrat" />
+    <mj-attributes>
+      <mj-text font-family="Monserrat, sans-serif" color="#000000" font-size="16px" line-height="24px"></mj-text>
+    </mj-attributes>
+  </mj-head>
+  <mj-body>
+    <mj-section>
+      <mj-column background-color="#c0dbf9">
+        <mj-image 
+
+        width="150px" src="https://erlef.org/images/EEF_Isotipo.png" alt="EEF Logo"/>
+        <mj-text font-style="italic" font-weight="800" font-size="24px" align="center" align="center">
+          Erlang Ecosystem Foundation
+        </mj-text>
+        <mj-text  font-weight="600" font-size="20px" align="center" align="center">
+          January 2026 Newsletter
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section>
+      <mj-column>
+        <mj-text align="center">
+          <a href="https://github.com/erlef/marketing-wg/blob/master/news/email/2026-01-21-eef-newsletter.html?raw=true">Browser version ➚</a>
+        </mj-text>
+        <mj-text>
+          <h1>Coming up</h1>
+          The EEF will be at <a href="https://fosdem.org/2026/">FOSDEM</a> representing and advocating for the ecosystem and sustainability. We have two speaking slots:
+          <ul>
+            <li>
+            <b>Code and Compliance:</b> "Scaling Security from Zero", presented by Jonatan Männchen
+            </li>
+            <li>
+            <b>Funding the FOSS Ecosystem:</b> "Build your funding toolkit", presented by Daniel Janowski
+            </li>
+          </ul>
+          If you'll be there, find us on the EEF slack and let us know.
+        </mj-text>
+        <mj-text>
+          <h1>What's been happening</h1>
+        </mj-text>
+        <mj-text>
+          <h2>Events</h2>
+        </mj-text>
+        <mj-text>
+           <h3>CodeBEAM Europe (Berlin)</h3>
+           <ul>
+           <li> A dedicated Gleam track bringing
+            together Gleamer and the curious.
+            A tidy foreshadowing of <a href="https://gleamgathering.com/">GleamGathering</a>
+            on 21 Feb in Bristol, UK.
+           </li>
+           <li><a href="https://atomvm.org">AtomVM</a> had talks covering the platform, the new JIT, and a lightning talk too . Conspiracy pundits expect next year’s CodeBEAM to have four AtomVM appearances.
+           </li>
+           <li>Deeper Erlang topics covered formal verification tools, error handling using assert, the scheduler, using TLA+ on GenServer, the new debugger in 28, gen_statem, optimization for 100+ core CPUs.</li>
+           </ul>
+           Watch for the <a href="https://www.youtube.com/playlist?list=PLvL2NEhYV4Zsb00vrNRGm1db6CK53Yq5V">videos</a>
+            as they come out.
+        </mj-text>
+        <mj-text>
+          <h3>CodeBEAM Satellite Events</h3>
+          The EEF coordinated events around CodeBEAM that extended the community experience. <a href="https://bitcrowd.net/en">bitcrowd</a> generously contributed space and coordinated local specialties like food.
+          <ul>
+            <li>
+              Tuesday evening: Nerves core member Gus Workman ran a hardware hands on session that gave attendees some experience writing a device driver
+            </li>
+            <li>
+              Thursday evening: the Berlin meetup gathered after the close of CodeBEAM with topics from the conference and others, bringing together local Berlin erlangers and elixirists with conference goers and speakers to talk, share and discuss.
+            </li>
+            <li>
+              Friday: Daniel Janowski of the EEF organized the first Berlin BEAM Unconference in collaboration with Josh Price of <a href="https://alembic.com.au">Alembic</a> and Chris Beck of <a href="https://bitcrowd.net/de">bitcrowd</a>. The Attendee generated and selected topics included discussion of how to improve our conferences, building broader adoption, visualizing Ash with Clarity and using Code Point in time, and finally a demo of Erlang-Red the flow based programming tool by Gerrit Riessen. Peter Saxton also demoed <a href="https://eyg.run">EYG</a> a tantalizing glimpse into what interactive program verification can look like.
+            </li>
+          </ul>
+          We are working on a community side event for ElixirConf EU in Málaga, on either 22 or 25 April.
+        </mj-text>
+        <mj-text>
+          <h3>ExMex</h3>
+          On November 6-7, the first <a href="https://exmexconf.com">ExMex</a> came to Austin, TX. And in the 
+          words of Nathan Hessler:
+          <blockquote>
+            Running ExMex was a joy from start to finish. The energy in the room, the quality of the talks, and the feedback we received from attendees about how meaningful and impactful the event was made it clear this community thrives when we gather in person. We’re incredibly grateful to the Elixir Ecosystem Foundation for helping make this long-held vision a reality.
+          </blockquote>
+        </mj-text>
+        <mj-text>
+          <h2>Security Work</h2>
+          There are three main areas of work in progress:
+          <ul>
+            <li>
+              <a href="https://security.erlef.org/aegis/roadmap/source-sbom.html">Source SBOM</a>: Support in the default toolchain and integration into common industry Tooling.
+            </li>
+            <li>
+              <a href="https://security.erlef.org/aegis/roadmap/supply-chain-security-audit.html">Supply Chain Security Audit</a>:
+              Audit hex package manager, registry and integration into build tools such as rebar3, mix and gleam. (PenTest, Verification of Design, Code Audit)
+            </li>
+          </ul>
+          <p>
+            The EEF is also working on other grants with governmental entities that
+            are interested in open source security and sustainability.
+          </p>
+          <p>
+          For more information, <a href="https://security.erlef.org/aegis/">see Ægis</a>, the EEF Security Initiative.
+          </p>
+        </mj-text>
+        <mj-text>
+          <h2>General Sponsors</h2>
+          We are happy to have some new and renewing sponsors that support the mission and work of the Foundation.
+          
+          <ul>
+            <li><a href="https://www.emqx.com/en">EMQ</a>:
+            The Unified MQTT Platform: Connect, process, and stream real-time data from millions of devices to any cloud, AI, and analytics. Turn massive IoT data into actionable intelligence with EMQX Platform.
+            </li>
+            <li><a href="https://plausible.io">Plausible Insights</a>:
+            Easy to use and privacy-friendly Google Analytics alternative.
+            Plausible is powerful, intuitive and lightweight analytics. No cookies just insights. Made and hosted in the EU, powered by European-owned infrastructure. 🇪🇺
+            </li>
+            <li><a href="https://www.wyeworks.com">WyeWorks</a>: Inspiring people to build great software. We build software people love and enable companies to succeed.
+            </li>
+            <li><a href="https://avassa.io">Avassa</a>:
+              Remote, secure, and scalable application management in 10s, 100s, or 10 000s of edge locations.
+            </li>
+            <li><a href="https://www.erlang-solutions.com">Erlang Solutions Ltd</a>:
+              We build transformative solutions for the world’s most ambitious companies. By providing user-focused consultancy, high tech capabilities and connection to diverse communities.
+            </li>
+            <li><a href="https://bitcrowd.net/en">Bitcrowd</a>:
+              The German consultancy for small to large companies (Deutsche Bahn and Red Bull to Lufthansa) for projects requiring greater agility. Specializing in Elixir, with Rust and Go, and as a significant Elixir AI contributor, also an excellent partner for your AI/ML projects.
+            </li>
+            <li><a href="https://www.pharos-avantgard.com">Pharos Avantgard (Pty) Ltd</a>:
+            Pharos empowers communication service providers to save costs, accelerate revenue growth, and boost efficiency—so they can compete more effectively in the fast-moving, ever-evolving world of communications
+            </li>
+        </mj-text>
+        <mj-text>
+          <h2>Project Sponsors</h2>
+          <ul>
+            <li>
+            <b>OpenTelemetry</b> - Straw Hat, LLC (Yordis Prieto) contributed to advance Metrics.
+            </li>
+            <li>
+            <b>Expert</b> - Enigmatic SA contributed to the Elixir language server.
+            </li>
+          </ul>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section>
+      <mj-column>
+        <mj-social font-size="15px" icon-size="30px" mode="horizontal">
+          <mj-social-element name="twitter" href="@TheErlef"/>
+          <mj-social-element name="github" href="https://github.com/erlef"/>
+          <mj-social-element href="https://bsky.app/profile/theerlef.bsky.social" 
+          src="https://erlef.org/images/social/Bluesky_Logo.png"/>
+ 
+          <mj-social-element name="linkedin" href="https://www.linkedin.com/company/erlef"/>
+    </mj-social>
+    </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>
