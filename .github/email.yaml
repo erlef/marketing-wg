@@ -1,0 +1,11 @@
+name: news email generation
+on: push
+jobs:
+  mjml_generate:
+    name: mjml generate html
+    steps:
+      - name: mjml envoke
+        with:
+          input_dir: news/mjml
+          output_dir: news/email
+        uses: actions/mjml-github-action@0.0.2
