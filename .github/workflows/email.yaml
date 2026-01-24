@@ -9,4 +9,4 @@ jobs:
         with:
           input_dir: news/mjml
           output_dir: news/email
-        uses: actions/mjml-github-action@0.0.2
+        uses: W0lfw00d/mjml-github-action@0.0.2
