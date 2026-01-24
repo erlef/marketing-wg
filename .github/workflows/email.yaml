@@ -3,6 +3,7 @@ on: push
 jobs:
   mjml_generate:
     name: mjml generate html
+    runs-on: ubuntu-latest
     steps:
       - name: mjml envoke
         with:
