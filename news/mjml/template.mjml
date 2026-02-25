@@ -1,0 +1,196 @@
+<mjml>
+  <mj-head>
+    <!-- Webfont (note: some email clients ignore webfonts; keep fallbacks) -->
+    <mj-font name="Montserrat" href="https://fonts.googleapis.com/css?family=Montserrat:400,700" />
+
+    <!-- Preheader -->
+    <mj-preview>{{PREVIEW_TEXT}}</mj-preview>
+
+    <mj-attributes>
+      <mj-all font-family="Montserrat, Arial, Helvetica, sans-serif" />
+      <mj-section background-color="#ffffff" />
+      <mj-text font-size="14px" line-height="20px" color="#1f2c34" font-weight="400" padding="0" />
+      <mj-divider border-width="1px" border-color="#d6dde1" padding="0" />
+
+      <!-- Small utilities -->
+      <mj-class name="utility" font-size="12px" line-height="16px" color="#5a6b75" font-weight="400" />
+      <mj-class name="h1" font-size="24px" line-height="30px" color="#1f2c34" font-weight="700" />
+    </mj-attributes>
+
+    <!-- Centralized styling so editors only touch p/ul/li + links -->
+    <mj-style inline="inline">
+      a, a:link, a:visited, a:hover, a:active { color:#49b7ff; text-decoration:none; font-weight:700 !important; }
+
+      /* Keep editing simple: no inline margins in content */
+      p { margin: 0 0 10px 0; }
+      ul, ol { margin: 0; padding-left: 18px; }
+      li { margin: 0 0 8px 0; }
+
+      code { font-family: monospace; }
+      .bold { font-weight: 700 !important; }
+
+      /* Hierarchy */
+      .section-title {
+        margin: 18px 0 10px 0;
+        color: #49b7ff;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 24px;
+      }
+      .sub-title {
+        margin: 32px 0 10px 0;
+        color: #1f2c34;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 24px;
+      }
+      .u-underline { display:inline-block; border-bottom:2px solid #49b7ff; padding-bottom:2px; }
+
+      /* Content patterns */
+      .card { margin: 0 0 14px 0; padding: 0; }
+      .eyebrow {
+        margin: 0 0 8px 0;
+        color: #5a6b75;
+        font-size: 12px;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+      }
+      .accent { border-left: 4px solid #49b7ff; padding-left: 12px; }
+      .muted { color: #5a6b75; font-size: 12px; line-height: 18px; }
+
+      /* CTA-as-link (simple, no MJML button needed) */
+      .cta {
+        display: inline-block;
+        padding: 10px 14px;
+        border: 1px solid #c8d2d9;
+        border-radius: 10px;
+        background: #ffffff;
+        color: #49b7ff !important;
+        font-weight: 700 !important;
+        text-decoration: none !important;
+      }
+      .cta-wrap { margin: 12px 0 0 0; }
+
+      .hr { height: 1px; background: #d6dde1; margin: 16px 0; }
+    </mj-style>
+  </mj-head>
+
+  <!-- Light theme outer -->
+  <mj-body background-color="#fafafa" width="600px">
+
+    <!-- Utility row -->
+    <mj-section padding="24px 12px 12px">
+      <mj-column>
+        <mj-text mj-class="utility" align="center" padding="0 12px">
+          <a href="{{BROWSER_URL}}" target="_blank">Browser version ➚</a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Main container -->
+    <mj-wrapper background-color="#ffffff" padding="0">
+
+      <!-- Header -->
+      <mj-section padding="20px 24px 12px">
+        <mj-column>
+          <mj-image
+            width="120px"
+            src="https://erlef.org/images/EEF_Isotipo.png"
+            alt="EEF Logo"
+            align="left"
+            padding="0"
+          />
+          <mj-text mj-class="h1" padding="12px 0 0 0">{{NEWSLETTER_TITLE}}</mj-text>
+          <mj-text mj-class="utility" padding="6px 0 0 0">{{NEWSLETTER_DATE}}</mj-text>
+        </mj-column>
+      </mj-section>
+
+      <mj-section padding="0 24px">
+        <mj-column><mj-divider /></mj-column>
+      </mj-section>
+
+      <!-- CONTENT: editors mainly edit p/ul/li below -->
+      <mj-section padding="0 24px 18px">
+        <mj-column>
+          <mj-text>
+            <!-- ========================= -->
+            <!-- TEMPLATE CONTENT START     -->
+            <!-- Copy/paste blocks + edit text/links only -->
+            <!-- ========================= -->
+
+            <!-- SECTION -->
+            <p class="section-title">Section title</p>
+
+            <!-- SUBSECTION -->
+            <p class="sub-title"><span class="u-underline">Subsection title</span></p>
+
+            <!-- GENERIC CARD -->
+            <div class="card">
+              <p>Write your paragraph here. Link example: <a href="https://example.com" target="_blank">example</a>.</p>
+              <ul>
+                <li>Bullet one</li>
+                <li>Bullet two</li>
+              </ul>
+              <p class="muted">Optional helper line (muted).</p>
+            </div>
+
+            <!-- DIVIDER -->
+            <div class="hr"></div>
+
+            <!-- EVENT CARD (eyebrow + accent) -->
+            <div class="card">
+              <p class="eyebrow">Event name (City)</p>
+              <div class="accent">
+                <ul>
+                  <li>Point one (use <code>code</code> for inline code)</li>
+                  <li>Point two</li>
+                </ul>
+                <p class="cta-wrap">
+                  <a class="cta" href="https://example.com" target="_blank">CTA link</a>
+                </p>
+              </div>
+            </div>
+
+            <!-- SPONSORS CARD (simple) -->
+            <p class="sub-title"><span class="u-underline">Sponsors</span></p>
+
+            <div class="card">
+              <p class="bold">General sponsors</p>
+              <p>Intro sentence about sponsors.</p>
+              <ul>
+                <li><a href="https://example.com" target="_blank">Sponsor</a>: one-line description.</li>
+                <li><a href="https://example.com" target="_blank">Sponsor</a>: one-line description.</li>
+              </ul>
+
+              <p class="bold" style="margin-top:14px;">Project sponsors</p>
+              <ul>
+                <li><span class="bold">Project</span> – sponsor details.</li>
+                <li><span class="bold">Project</span> – sponsor details.</li>
+              </ul>
+            </div>
+
+            <!-- ========================= -->
+            <!-- TEMPLATE CONTENT END       -->
+            <!-- ========================= -->
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+      <!-- Footer -->
+      <mj-section padding="0 24px 18px">
+        <mj-column align="center">
+          <mj-divider />
+          <mj-social font-size="13px" icon-size="28px" mode="horizontal" padding="14px 0 0 0" align="center">
+            <mj-social-element name="twitter" href="https://x.com/TheErlef" />
+            <mj-social-element name="github" href="https://github.com/erlef" />
+            <mj-social-element name="linkedin" href="https://www.linkedin.com/company/erlef" />
+          </mj-social>
+          <mj-text mj-class="utility" align="center" padding="10px 0 0 0">
+            <a href="{Unsubscribe_Url}" target="_blank">Unsubscribe</a>
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+    </mj-wrapper>
+  </mj-body>
+</mjml>
