@@ -1,0 +1,269 @@
+<mjml>
+  <mj-head>
+    <mj-font name="Montserrat" href="https://fonts.googleapis.com/css?family=Montserrat:400,700" />
+    <mj-preview>EEF updates: FOSDEM, CodeBEAM, security work, and sponsor news.</mj-preview>
+
+    <mj-attributes>
+      <mj-all font-family="Montserrat, Arial, Helvetica, sans-serif" />
+      <mj-section background-color="#ffffff" />
+      <mj-text font-size="14px" line-height="20px" color="#1f2c34" font-weight="400" padding="0" />
+      <mj-divider border-width="1px" border-color="#d6dde1" padding="0" />
+      <mj-class name="utility" font-size="12px" line-height="16px" color="#5a6b75" font-weight="400" />
+      <mj-class name="h1" font-size="24px" line-height="30px" color="#1f2c34" font-weight="700" />
+    </mj-attributes>
+
+    <!-- Keep styling centralized so editors only touch p/ul/li text -->
+    <mj-style inline="inline">
+      a, a:link, a:visited, a:hover, a:active { color:#49b7ff; text-decoration:none; font-weight:700 !important; }
+
+      p { margin: 0 0 10px 0; }
+      ul, ol { margin: 0; padding-left: 18px; }
+      li { margin: 0 0 8px 0; }
+
+      code { font-family: monospace; }
+
+      .bold { font-weight: 700; }
+
+      .section-title {
+        margin: 18px 0 10px 0;
+        color: #49b7ff;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 24px;
+      }
+
+      .sub-title {
+        margin: 32px 0 10px 0;
+        color: #1f2c34;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 24px;
+      }
+
+      .u-underline { display:inline-block; border-bottom:2px solid #49b7ff; padding-bottom:2px; }
+
+      .card { margin: 0 0 14px 0; padding: 0; }
+
+      .eyebrow {
+        margin: 0 0 8px 0;
+        color: #5a6b75;
+        font-size: 12px;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+      }
+
+      .accent { border-left: 4px solid #49b7ff; padding-left: 12px; }
+
+      .muted { color: #5a6b75; font-size: 12px; line-height: 18px; }
+
+      .cta {
+        display: inline-block;
+        padding: 10px 14px;
+        border: 1px solid #c8d2d9;
+        border-radius: 10px;
+        background: #ffffff;
+        color: #49b7ff !important;
+        font-weight: 700 !important;
+        text-decoration: none !important;
+      }
+
+      .cta-wrap { margin: 12px 0 0 0; }
+
+      .hr { height: 1px; background: #d6dde1; margin: 16px 0; }
+    </mj-style>
+  </mj-head>
+
+  <mj-body background-color="#fafafa" width="600px">
+
+    <!-- Utility row -->
+    <mj-section padding="24px 12px 12px">
+      <mj-column>
+        <mj-text mj-class="utility" align="center" padding="0 12px">
+          <a href="{{BROWSER_URL}}" target="_blank">Browser version ➚</a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Main container -->
+    <mj-wrapper background-color="#ffffff" padding="0">
+
+      <!-- Header -->
+      <mj-section padding="20px 24px 12px">
+        <mj-column>
+          <mj-image width="120px" src="https://erlef.org/images/EEF_Isotipo.png" alt="EEF Logo" align="left" padding="0" />
+          <mj-text mj-class="h1" padding="12px 0 0 0">Erlang Ecosystem Foundation</mj-text>
+          <mj-text mj-class="utility" padding="6px 0 0 0">January 2026 Newsletter</mj-text>
+        </mj-column>
+      </mj-section>
+
+      <mj-section padding="0 24px"><mj-column><mj-divider /></mj-column></mj-section>
+
+      <!-- CONTENT: edit mostly with p/ul/li -->
+      <mj-section padding="0 24px 18px">
+        <mj-column>
+          <mj-text>
+
+            <p class="section-title">Coming up</p>
+
+            <p class="sub-title"><span class="u-underline">FOSDEM</span></p>
+
+            <div class="card">
+              <p>
+                The EEF will be at <a href="https://fosdem.org/2026/" target="_blank">FOSDEM</a> representing and advocating
+                for the ecosystem and sustainability. We have two speaking slots:
+              </p>
+
+              <ul>
+                <li><span class="bold">Code and Compliance:</span> “Scaling Security from Zero”, presented by Jonatan Männchen</li>
+                <li><span class="bold">Funding the FOSS Ecosystem:</span> “Build your funding toolkit”, presented by Daniel Janowski</li>
+              </ul>
+
+              <p class="muted">If you’ll be there, find us on the EEF Slack and let us know.</p>
+            </div>
+
+            <div class="hr"></div>
+
+            <p class="section-title">What’s been happening</p>
+
+            <p class="sub-title"><span class="u-underline">Events</span></p>
+
+            <div class="card">
+              <p class="eyebrow">CodeBEAM Europe (Berlin)</p>
+
+              <div class="accent">
+                <ul>
+                  <li>
+                    A dedicated Gleam track bringing together Gleamers and the curious. A tidy foreshadowing of
+                    <a href="https://gleamgathering.com/" target="_blank">GleamGathering</a> on 21 Feb in Bristol, UK.
+                  </li>
+                  <li>
+                    <a href="https://atomvm.org" target="_blank">AtomVM</a> had talks covering the platform, the new JIT, and a lightning talk too.
+                    Conspiracy pundits expect next year’s CodeBEAM to have four AtomVM appearances.
+                  </li>
+                  <li>
+                    Deeper Erlang topics covered formal verification tools, error handling using <code>assert</code>,
+                    the scheduler, using TLA+ on GenServer, the new debugger in 28, <code>gen_statem</code>,
+                    optimization for 100+ core CPUs.
+                  </li>
+                </ul>
+
+                <p class="cta-wrap">
+                  <a class="cta" href="https://www.youtube.com/playlist?list=PLvL2NEhYV4Zsb00vrNRGm1db6CK53Yq5V" target="_blank">
+                    Watch the videos
+                  </a>
+                </p>
+              </div>
+            </div>
+
+            <div class="card">
+              <p class="eyebrow">CodeBEAM Satellite Events</p>
+
+              <div class="accent">
+                <p>
+                  The EEF coordinated events around CodeBEAM that extended the community experience.
+                  <a href="https://bitcrowd.net/en" target="_blank">bitcrowd</a> generously contributed space and coordinated local specialties like food.
+                </p>
+
+                <ul>
+                  <li>
+                    Tuesday evening: Nerves core member Gus Workman ran a hardware hands-on session that gave attendees experience writing a device driver
+                  </li>
+                  <li>
+                    Thursday evening: the Berlin meetup gathered after the close of CodeBEAM with topics from the conference and others
+                  </li>
+                  <li>
+                    Friday: Daniel Janowski organized the first Berlin BEAM Unconference with Josh Price (<a href="https://alembic.com.au" target="_blank">Alembic</a>)
+                    and Chris Beck (<a href="https://bitcrowd.net/de" target="_blank">bitcrowd</a>)… plus demos including <a href="https://eyg.run" target="_blank">EYG</a>
+                  </li>
+                </ul>
+
+                <p>
+                  We are working on a community side event for ElixirConf EU in Málaga, on either 22 or 25 April.
+                </p>
+              </div>
+            </div>
+
+            <div class="card">
+              <p class="eyebrow">ExMex</p>
+
+              <div class="accent">
+                <p>
+                  On November 6–7, the first <a href="https://exmexconf.com" target="_blank">ExMex</a> came to Austin, TX. In the words of Nathan Hessler:
+                </p>
+
+                <p>
+                  Running ExMex was a joy from start to finish. The energy in the room, the quality of the talks, and the feedback we received from attendees about how meaningful and impactful the event was made it clear this community thrives when we gather in person. We’re incredibly grateful to the Elixir Ecosystem Foundation for helping make this long-held vision a reality.
+                </p>
+              </div>
+            </div>
+
+            <p class="sub-title"><span class="u-underline">Security work</span></p>
+
+            <div class="card">
+              <p>There are three main areas of work in progress:</p>
+
+              <ul>
+                <li>
+                  <a href="https://security.erlef.org/aegis/roadmap/source-sbom.html" target="_blank">Source SBOM</a>:
+                  Support in the default toolchain and integration into common industry tooling.
+                </li>
+                <li>
+                  <a href="https://security.erlef.org/aegis/roadmap/supply-chain-security-audit.html" target="_blank">Supply Chain Security Audit</a>:
+                  Audit Hex package manager, registry and integration into build tools (rebar3, mix, Gleam).
+                </li>
+              </ul>
+
+              <p>
+                For more information, <a href="https://security.erlef.org/aegis/" target="_blank">see Ægis</a>, the EEF Security Initiative.
+              </p>
+            </div>
+
+            <p class="sub-title"><span class="u-underline">Sponsors</span></p>
+
+            <div class="card">
+              <p class="bold">General sponsors</p>
+
+              <p>
+                We are happy to have some new and renewing sponsors that support the mission and work of the Foundation.
+              </p>
+
+              <ul>
+                <li><a href="https://www.emqx.com/en" target="_blank">EMQ</a>: The Unified MQTT Platform: Connect, process, and stream real-time data from millions of devices to any cloud, AI, and analytics. Turn massive IoT data into actionable intelligence with EMQX Platform.</li>
+                <li><a href="https://plausible.io" target="_blank">Plausible</a>: Easy to use and privacy-friendly Google Analytics alternative. Plausible is powerful, intuitive and lightweight analytics. No cookies just insights. Made and hosted in the EU, powered by European-owned infrastructure. 🇪🇺</li>
+                <li><a href="https://www.wyeworks.com" target="_blank">WyeWorks</a>: Inspiring people to build great software. We build software people love and enable companies to succeed.</li>
+                <li><a href="https://avassa.io" target="_blank">Avassa</a>: Remote, secure, and scalable application management in 10s, 100s, or 10 000s of edge locations.</li>
+                <li><a href="https://www.erlang-solutions.com" target="_blank">Erlang Solutions</a>: We build transformative solutions for the world’s most ambitious companies. By providing user-focused consultancy, high tech capabilities and connection to diverse communities.</li>
+                <li><a href="https://bitcrowd.net/en" target="_blank">bitcrowd</a>: The German consultancy for small to large companies (Deutsche Bahn and Red Bull to Lufthansa) for projects requiring greater agility. Specializing in Elixir, with Rust and Go, and as a significant Elixir AI contributor, also an excellent partner for your AI/ML projects.</li>
+                <li><a href="https://www.pharos-avantgard.com" target="_blank">Pharos Avantgard</a>: Pharos empowers communication service providers to save costs, accelerate revenue growth, and boost efficiency—so they can compete more effectively in the fast-moving, ever-evolving world of communications.</li>
+              </ul>
+
+              <p class="bold">Project sponsors</p>
+
+              <ul>
+                <li><span class="bold">OpenTelemetry</span> – Straw Hat, LLC (Yordis Prieto) contributed to advance Metrics.</li>
+                <li><span class="bold">Expert</span> – Enigmatic SA contributed to the Elixir language server.</li>
+              </ul>
+            </div>
+
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+      <!-- Footer -->
+      <mj-section padding="0 24px 18px">
+        <mj-column align="center">
+          <mj-divider />
+          <mj-social font-size="13px" icon-size="28px" mode="horizontal" padding="14px 0 0 0" align="center">
+            <mj-social-element name="twitter" href="https://x.com/TheErlef" />
+            <mj-social-element name="github" href="https://github.com/erlef" />
+            <mj-social-element name="linkedin" href="https://www.linkedin.com/company/erlef" />
+          </mj-social>
+          <mj-text mj-class="utility" align="center" padding="10px 0 0 0">
+            <a href="{Unsubscribe_Url}" target="_blank">Unsubscribe</a>
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+    </mj-wrapper>
+  </mj-body>
+</mjml>
