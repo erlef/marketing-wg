@@ -1,0 +1,53 @@
+      a, a:link, a:visited, a:hover, a:active { color:#49b7ff; text-decoration:none; font-weight:700 !important; }
+
+      /* Keep editing simple: no inline margins in content */
+      p { margin: 0 0 10px 0; }
+      ul, ol { margin: 0; padding-left: 18px; }
+      li { margin: 0 0 8px 0; }
+
+      code { font-family: monospace; }
+      .bold { font-weight: 700 !important; }
+
+      /* Hierarchy */
+      .section-title {
+        margin: 18px 0 10px 0;
+        color: #49b7ff;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 24px;
+      }
+      .sub-title {
+        margin: 32px 0 10px 0;
+        color: #1f2c34;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 24px;
+      }
+      .u-underline { display:inline-block; border-bottom:2px solid #49b7ff; padding-bottom:2px; }
+
+      /* Content patterns */
+      .card { margin: 0 0 14px 0; padding: 0; }
+      .eyebrow {
+        margin: 0 0 8px 0;
+        color: #5a6b75;
+        font-size: 12px;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+      }
+      .accent { border-left: 4px solid #49b7ff; padding-left: 12px; }
+      .muted { color: #5a6b75; font-size: 12px; line-height: 18px; }
+
+      /* CTA-as-link (simple, no MJML button needed) */
+      .cta {
+        display: inline-block;
+        padding: 10px 14px;
+        border: 1px solid #c8d2d9;
+        border-radius: 10px;
+        background: #ffffff;
+        color: #49b7ff !important;
+        font-weight: 700 !important;
+        text-decoration: none !important;
+      }
+      .cta-wrap { margin: 12px 0 0 0; }
+
+      .hr { height: 1px; background: #d6dde1; margin: 16px 0; }

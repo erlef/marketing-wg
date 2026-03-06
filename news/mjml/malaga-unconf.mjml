@@ -4,7 +4,7 @@
     <mj-font name="Montserrat" href="https://fonts.googleapis.com/css?family=Montserrat:400,700" />
 
     <!-- Preheader -->
-    <mj-preview>{{PREVIEW_TEXT}}</mj-preview>
+    <mj-preview>Málaga Community Unconference</mj-preview>
 
     <mj-attributes>
       <mj-all font-family="Montserrat, Arial, Helvetica, sans-serif" />
@@ -18,60 +18,8 @@
     </mj-attributes>
 
     <!-- Centralized styling so editors only touch p/ul/li + links -->
+    <mj-include path="./inline-styles.css" type="css" css-inline="css" />
     <mj-style inline="inline">
-      a, a:link, a:visited, a:hover, a:active { color:#49b7ff; text-decoration:none; font-weight:700 !important; }
-
-      /* Keep editing simple: no inline margins in content */
-      p { margin: 0 0 10px 0; }
-      ul, ol { margin: 0; padding-left: 18px; }
-      li { margin: 0 0 8px 0; }
-
-      code { font-family: monospace; }
-      .bold { font-weight: 700 !important; }
-
-      /* Hierarchy */
-      .section-title {
-        margin: 18px 0 10px 0;
-        color: #49b7ff;
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 24px;
-      }
-      .sub-title {
-        margin: 32px 0 10px 0;
-        color: #1f2c34;
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 24px;
-      }
-      .u-underline { display:inline-block; border-bottom:2px solid #49b7ff; padding-bottom:2px; }
-
-      /* Content patterns */
-      .card { margin: 0 0 14px 0; padding: 0; }
-      .eyebrow {
-        margin: 0 0 8px 0;
-        color: #5a6b75;
-        font-size: 12px;
-        letter-spacing: 0.02em;
-        text-transform: uppercase;
-      }
-      .accent { border-left: 4px solid #49b7ff; padding-left: 12px; }
-      .muted { color: #5a6b75; font-size: 12px; line-height: 18px; }
-
-      /* CTA-as-link (simple, no MJML button needed) */
-      .cta {
-        display: inline-block;
-        padding: 10px 14px;
-        border: 1px solid #c8d2d9;
-        border-radius: 10px;
-        background: #ffffff;
-        color: #49b7ff !important;
-        font-weight: 700 !important;
-        text-decoration: none !important;
-      }
-      .cta-wrap { margin: 12px 0 0 0; }
-
-      .hr { height: 1px; background: #d6dde1; margin: 16px 0; }
     </mj-style>
   </mj-head>
 
@@ -82,7 +30,7 @@
     <mj-section padding="24px 12px 12px">
       <mj-column>
         <mj-text mj-class="utility" align="center" padding="0 12px">
-          <a href="{{BROWSER_URL}}" target="_blank">Browser version ➚</a>
+          <a href="https://marketing.erlef.org/news/events/malaga-unconf.html" target="_blank">Browser version ➚</a>
         </mj-text>
       </mj-column>
     </mj-section>
@@ -100,8 +48,8 @@
             align="left"
             padding="0"
           />
-          <mj-text mj-class="h1" padding="12px 0 0 0">{{NEWSLETTER_TITLE}}</mj-text>
-          <mj-text mj-class="utility" padding="6px 0 0 0">{{NEWSLETTER_DATE}}</mj-text>
+          <mj-text mj-class="h1" padding="12px 0 0 0">Málaga Community Unconference</mj-text>
+          <mj-text mj-class="utility" padding="6px 0 0 0">Wednesday April 22, 2026</mj-text>
         </mj-column>
       </mj-section>
 
@@ -119,19 +67,14 @@
             <!-- ========================= -->
 
             <!-- SECTION -->
-            <p class="section-title">Section title</p>
+            <p class="section-title">Pre-ElixirConf EU Event</p>
 
             <!-- SUBSECTION -->
-            <p class="sub-title"><span class="u-underline">Subsection title</span></p>
+            <p class="sub-title"><span class="u-underline">One Day, Community Driven</span></p>
 
             <!-- GENERIC CARD -->
             <div class="card">
-              <p>Write your paragraph here. Link example: <a href="https://example.com" target="_blank">example</a>.</p>
-              <ul>
-                <li>Bullet one</li>
-                <li>Bullet two</li>
-              </ul>
-              <p class="muted">Optional helper line (muted).</p>
+              <p>The EEF is organizing one day of community driven talks, discussions, and a nerves workshop (including provided hardware) on the day before the main conference begins.</p>
             </div>
 
             <!-- DIVIDER -->
@@ -139,34 +82,62 @@
 
             <!-- EVENT CARD (eyebrow + accent) -->
             <div class="card">
-              <p class="eyebrow">Event name (City)</p>
+              <p class="eyebrow">ElixirConf EU Unconference (Málaga)</p>
               <div class="accent">
                 <ul>
-                  <li>Point one (use <code>code</code> for inline code)</li>
-                  <li>Point two</li>
+                  <li>Wednesday April 22</li>
+                  <li>Signup fee <code>10€</code> (to cover food)</li>
+                  <li>Close to the conference hotel</li>
+                  <li>0900 to 1600 (times may be adjusted)</li>
+                  <li>Space is capacity limited</li>
                 </ul>
                 <p class="cta-wrap">
-                  <a class="cta" href="https://example.com" target="_blank">CTA link</a>
+                  <a class="cta" href="https://luma.com/q4ykwcsl" target="_blank">Sign up on Luma</a>
                 </p>
               </div>
             </div>
 
             <!-- SPONSORS CARD (simple) -->
-            <p class="sub-title"><span class="u-underline">Sponsors</span></p>
+            <p class="sub-title"><span class="u-underline">DETAILS</span></p>
 
             <div class="card">
-              <p class="bold">General sponsors</p>
-              <p>Intro sentence about sponsors.</p>
+              <p>
+              Our successful experiment in Berlin goes big(er) at ElixirConf EU.
+              The organization will be similar, with some improvements.
+              </p>
+              <p class="bold">Unconference</p>
+              <p>
+              Prior to the date, a topic submission window will open for participants. The submissions
+              will be visible from the time they are submitted, so everyone can see what's already there.
+              There will be three formats:
               <ul>
-                <li><a href="https://example.com" target="_blank">Sponsor</a>: one-line description.</li>
-                <li><a href="https://example.com" target="_blank">Sponsor</a>: one-line description.</li>
+              <li>Teach</li>
+              <li>Discuss</li>
+              <li>Learn</li>
               </ul>
+              </p>
+              <p>
+              A Learn topic is a call for experts to Teach what they know.
+              Since the submissions will be public as they are posted, this gives experts a chance
+              to prepare.
+              <p>
+            </div>
 
-              <p class="bold" style="margin-top:14px;">Project sponsors</p>
-              <ul>
-                <li><span class="bold">Project</span> – sponsor details.</li>
-                <li><span class="bold">Project</span> – sponsor details.</li>
-              </ul>
+            <div class="card">
+            <p class="bold">Nerves Workshop</p>
+
+            <p>
+            Co-located with the Unconference (in the same room as of now), 
+            the traditional conference Nerves satellite event is here. The Nerves core team love a good pre-conference gathering to get into the groove. Meet a smaller group of devs and hack on stuff, talk, share ideas.
+            </p>
+
+            <p>
+            There will be a one or more slots reserved for Nerves Talk(s) as part of the Unconference, the rest will be hands-on.
+
+            <p>More details to come (check back here) and the hope to be showing never-before-touched hardware. We'll bring, embedded hardware, half-baked software and an issue tracker full of hopes and dreams. Together we build up the Nerves Starter Kit. Elixir skills are strongly recommended but not strictly required. Bring your computer and lets get hacking. Expect an informal, workshop and hack session environment.</p>
+
+            <p>Rumor has it that some people might get to bring hardware home.</p>
+
             </div>
 
             <!-- ========================= -->
