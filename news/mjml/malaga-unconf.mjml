@@ -74,7 +74,7 @@
 
             <!-- GENERIC CARD -->
             <div class="card">
-              <p>The EEF is organizing one day of community driven talks, discussions, and a nerves workshop (including provided hardware) on the day before the main conference begins.</p>
+              <p>The EEF is organizing one day of community driven talks, discussions, and a nerves workshop (with Nerves Starter Kit prototypes to experiment with) on the day before the main conference begins.</p>
             </div>
 
             <!-- DIVIDER -->
@@ -128,15 +128,15 @@
 
             <p>
             Co-located with the Unconference (in the same room as of now), 
-            the traditional conference Nerves satellite event is here. The Nerves core team love a good pre-conference gathering to get into the groove. Meet a smaller group of devs and hack on stuff, talk, share ideas.
+            the traditional conference Nerves satellite event is here. The Nerves core team loves a good pre-conference gathering to get into the groove. Meet a smaller group of devs, hack on stuff, talk, share ideas.
             </p>
 
             <p>
-            There will be a one or more slots reserved for Nerves Talk(s) as part of the Unconference, the rest will be hands-on.
+            There will be a one or more Talk slots reserved for Nerves as part of the Unconference, the rest will be hands-on.
 
-            <p>More details to come (check back here) and the hope to be showing never-before-touched hardware. We'll bring, embedded hardware, half-baked software and an issue tracker full of hopes and dreams. Together we build up the Nerves Starter Kit. Elixir skills are strongly recommended but not strictly required. Bring your computer and lets get hacking. Expect an informal, workshop and hack session environment.</p>
+            <p> We hope to show never-before-touched hardware. We'll bring, embedded hardware, half-baked software and an issue tracker full of hopes and dreams. Hardware will be provided to experiment with. Together we build up the Nerves Starter Kit. Elixir skills are strongly recommended but not strictly required. Bring your computer and lets get hacking. Expect an informal workshop and hack session environment.</p>
 
-            <p>Rumor has it that some people might get to bring hardware home.</p>
+            <p>Rumor has it that some people might get to bring hardware home. More details to come (check back <a href="https://marketing.erlef.org/events/malaga-unconf.html">here</a>).</p>
 
             </div>
 
