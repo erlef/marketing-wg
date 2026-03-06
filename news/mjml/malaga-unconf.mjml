@@ -30,7 +30,7 @@
     <mj-section padding="24px 12px 12px">
       <mj-column>
         <mj-text mj-class="utility" align="center" padding="0 12px">
-          <a href="https://marketing.erlef.org/news/events/malaga-unconf.html" target="_blank">Browser version ➚</a>
+          <a href="https://marketing.erlef.org/events/malaga-unconf.html" target="_blank">Browser version ➚</a>
         </mj-text>
       </mj-column>
     </mj-section>
