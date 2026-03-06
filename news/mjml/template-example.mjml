@@ -251,12 +251,14 @@
 
       <!-- Footer -->
       <mj-section padding="0 24px 18px">
-        <mj-column align="center">
+        <mj-column>
           <mj-divider />
           <mj-social font-size="13px" icon-size="28px" mode="horizontal" padding="14px 0 0 0" align="center">
             <mj-social-element name="twitter" href="https://x.com/TheErlef" />
             <mj-social-element name="github" href="https://github.com/erlef" />
             <mj-social-element name="linkedin" href="https://www.linkedin.com/company/erlef" />
+            <mj-social-element href="https://bsky.app/profile/theerlef.bsky.social" 
+              src="https://erlef.org/images/social/Bluesky_Logo.png"/>
           </mj-social>
           <mj-text mj-class="utility" align="center" padding="10px 0 0 0">
             <a href="{Unsubscribe_Url}" target="_blank">Unsubscribe</a>
