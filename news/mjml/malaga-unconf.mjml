@@ -86,13 +86,17 @@
               <div class="accent">
                 <ul>
                   <li>Wednesday April 22</li>
-                  <li>Signup fee <code>10€</code> (to cover food)</li>
+                  <li>Support the event <code>€10</code></li>
                   <li>Close to the conference hotel</li>
                   <li>0900 to 1600 (times may be adjusted)</li>
                   <li>Space is capacity limited</li>
                 </ul>
                 <p class="cta-wrap">
                   <a class="cta" href="https://luma.com/q4ykwcsl" target="_blank">Sign up on Luma</a>
+                </p>
+                <p class="cta-wrap">
+                  <a class="cta" href="https://www.every.org/erlang-ecosystem-foundation-inc/f/malaga-community-unconference"
+                  target="_blank">Support the Event</a>
                 </p>
               </div>
             </div>
