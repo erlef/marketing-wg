@@ -74,7 +74,11 @@
 
             <!-- GENERIC CARD -->
             <div class="card">
-              <p>The EEF is organizing one day of community driven talks, discussions, and a nerves workshop (with Nerves Starter Kit prototypes to experiment with) on the day before the main conference begins.</p>
+              <p>The EEF is organizing a day of community driven talks, discussions, and workshops the day before ElixirConf EU.</p>
+              <ul>
+                <li>Elixir Unconference</li>
+                <li>Nerves workshop (with Nerves Starter Kit prototypes to experiment with)</li>
+                <li>GRiSP workshop, with hands-on hardware</li>
             </div>
 
             <!-- DIVIDER -->
@@ -138,10 +142,20 @@
             <p>
             There will be a one or more Talk slots reserved for Nerves as part of the Unconference, the rest will be hands-on.
 
-            <p> We hope to show never-before-touched hardware. We'll bring, embedded hardware, half-baked software and an issue tracker full of hopes and dreams. Hardware will be provided to experiment with. Together we build up the Nerves Starter Kit. Elixir skills are strongly recommended but not strictly required. Bring your computer and lets get hacking. Expect an informal workshop and hack session environment.</p>
+            <p> We hope to show never-before-touched hardware. We'll bring, embedded hardware, half-baked software and an issue tracker full of hopes and dreams. Hardware will be provided to experiment with. Together we build up the <b>Nerves Starter Kit</b>. Elixir skills are strongly recommended but not strictly required. Bring your computer and lets get hacking. Expect an informal workshop and hack session environment.</p>
 
             <p>Rumor has it that some people might get to bring hardware home. More details to come (check back <a href="https://marketing.erlef.org/events/malaga-unconf.html">here</a>).</p>
 
+            </div>
+            <div class="card">
+            <p class="bold">GRiSP Workshop</p>
+
+            <p>
+            Joining the Nerves Workshop, the GRiSP workshop is for everyone who likes their Erlang and Elixir a little closer to the hardware. We’ll bring GRiSP2 boards, PMODs, GRiSP nano prototype boards, and the hardware from the <a href="https://www.grisp.org/blog/posts/2025-08-12-eustaquia-at-atlanticaconf">Eustaquia project</a> — a small GRiSP2-powered plant that watches soil moisture and makes faces when it gets thirsty.
+            </p>
+
+            <p>In this workshop we'll be plugging things together, trying ideas, comparing notes, and seeing what happens when code escapes the laptop and lands in the real world. We also want to get GRiSP Alloy running on the <b>Nerves Starter Kit</b> featured in the Nerves workshop, so this is a great place for GRiSP and Nerves folks to meet, tinker, and cross-pollinate. Bring your laptop; we'll bring the boards, sensors, cables, and prototypes. Come for the workshop, stay for the moment something blinks, moves, or unexpectedly works.
+            </p>
             </div>
 
             <!-- ========================= -->
