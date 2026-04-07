@@ -83,7 +83,9 @@
               Please <b>do NOT</b> share this on general social media (twitter, linked-in). </p>
               <p>
               Please <b>do</b> share it within our community forums, discords, slacks, direct message.</p>
-
+              <p>
+                If you do share it without this page, please include these sharing details</p>
+              
               <p class="cta-wrap">
                 <a class="cta" href="https://forms.erlef.org/r/VLYZGJ" target="_blank">Go To The Form</a>
               </p>
@@ -125,7 +127,6 @@
       </mj-section>
 
       <!-- Footer -->
-    <mj-include path="./footer.mjml" type="mjml" />
     </mj-wrapper>
   </mj-body>
 </mjml>
