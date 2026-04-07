@@ -1,77 +1,13 @@
 <mjml>
   <mj-head>
-    <!-- Webfont (note: some email clients ignore webfonts; keep fallbacks) -->
-    <mj-font name="Montserrat" href="https://fonts.googleapis.com/css?family=Montserrat:400,700" />
 
     <!-- Preheader -->
     <mj-preview>{{PREVIEW_TEXT}}</mj-preview>
 
-    <mj-attributes>
-      <mj-all font-family="Montserrat, Arial, Helvetica, sans-serif" />
-      <mj-section background-color="#ffffff" />
-      <mj-text font-size="14px" line-height="20px" color="#1f2c34" font-weight="400" padding="0" />
-      <mj-divider border-width="1px" border-color="#d6dde1" padding="0" />
-
-      <!-- Small utilities -->
-      <mj-class name="utility" font-size="12px" line-height="16px" color="#5a6b75" font-weight="400" />
-      <mj-class name="h1" font-size="24px" line-height="30px" color="#1f2c34" font-weight="700" />
-    </mj-attributes>
-
+    <mj-include path="./common.mjml" type="mjml" />
     <!-- Centralized styling so editors only touch p/ul/li + links -->
+    <mj-include path="./inline-styles.css" type="css" css-inline="css" />
     <mj-style inline="inline">
-      a, a:link, a:visited, a:hover, a:active { color:#49b7ff; text-decoration:none; font-weight:700 !important; }
-
-      /* Keep editing simple: no inline margins in content */
-      p { margin: 0 0 10px 0; }
-      ul, ol { margin: 0; padding-left: 18px; }
-      li { margin: 0 0 8px 0; }
-
-      code { font-family: monospace; }
-      .bold { font-weight: 700 !important; }
-
-      /* Hierarchy */
-      .section-title {
-        margin: 18px 0 10px 0;
-        color: #49b7ff;
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 24px;
-      }
-      .sub-title {
-        margin: 32px 0 10px 0;
-        color: #1f2c34;
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 24px;
-      }
-      .u-underline { display:inline-block; border-bottom:2px solid #49b7ff; padding-bottom:2px; }
-
-      /* Content patterns */
-      .card { margin: 0 0 14px 0; padding: 0; }
-      .eyebrow {
-        margin: 0 0 8px 0;
-        color: #5a6b75;
-        font-size: 12px;
-        letter-spacing: 0.02em;
-        text-transform: uppercase;
-      }
-      .accent { border-left: 4px solid #49b7ff; padding-left: 12px; }
-      .muted { color: #5a6b75; font-size: 12px; line-height: 18px; }
-
-      /* CTA-as-link (simple, no MJML button needed) */
-      .cta {
-        display: inline-block;
-        padding: 10px 14px;
-        border: 1px solid #c8d2d9;
-        border-radius: 10px;
-        background: #ffffff;
-        color: #49b7ff !important;
-        font-weight: 700 !important;
-        text-decoration: none !important;
-      }
-      .cta-wrap { margin: 12px 0 0 0; }
-
-      .hr { height: 1px; background: #d6dde1; margin: 16px 0; }
     </mj-style>
   </mj-head>
 
@@ -177,22 +113,7 @@
       </mj-section>
 
       <!-- Footer -->
-      <mj-section padding="0 24px 18px">
-        <mj-column>
-          <mj-divider />
-          <mj-social font-size="13px" icon-size="28px" mode="horizontal" padding="14px 0 0 0" align="center">
-            <mj-social-element name="twitter" href="https://x.com/TheErlef" />
-            <mj-social-element name="github" href="https://github.com/erlef" />
-            <mj-social-element name="linkedin" href="https://www.linkedin.com/company/erlef" />
-            <mj-social-element href="https://bsky.app/profile/theerlef.bsky.social" 
-              src="https://erlef.org/images/social/Bluesky_Logo.png"/>
-          </mj-social>
-          <mj-text mj-class="utility" align="center" padding="10px 0 0 0">
-            <a href="{Unsubscribe_Url}" target="_blank">Unsubscribe</a>
-          </mj-text>
-        </mj-column>
-      </mj-section>
-
+    <mj-include path="./footer.mjml" type="mjml" />
     </mj-wrapper>
   </mj-body>
 </mjml>

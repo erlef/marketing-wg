@@ -1,0 +1,12 @@
+    <!-- Webfont (note: some email clients ignore webfonts; keep fallbacks) -->
+    <mj-font name="Montserrat" href="https://fonts.googleapis.com/css?family=Montserrat:400,700" />
+    <mj-attributes>
+      <mj-all font-family="Montserrat, Arial, Helvetica, sans-serif" />
+      <mj-section background-color="#ffffff" />
+      <mj-text font-size="14px" line-height="20px" color="#1f2c34" font-weight="400" padding="0" />
+      <mj-divider border-width="1px" border-color="#d6dde1" padding="0" />
+
+      <!-- Small utilities -->
+      <mj-class name="utility" font-size="12px" line-height="16px" color="#5a6b75" font-weight="400" />
+      <mj-class name="h1" font-size="24px" line-height="30px" color="#1f2c34" font-weight="700" />
+    </mj-attributes>
