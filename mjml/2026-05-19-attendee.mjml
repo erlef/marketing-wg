@@ -1,0 +1,102 @@
+<mjml>
+  <mj-head>
+
+    <!-- Preheader -->
+    <mj-preview>19 May Unconference</mj-preview>
+
+    <mj-include path="./common.mjml" type="mjml" />
+    <!-- Centralized styling so editors only touch p/ul/li + links -->
+    <mj-include path="./inline-styles.css" type="css" css-inline="css" />
+    <mj-style inline="inline">
+    </mj-style>
+  </mj-head>
+
+  <!-- Light theme outer -->
+  <mj-body background-color="#fafafa" width="600px">
+
+    <!-- Main container -->
+    <mj-wrapper background-color="#ffffff" padding="0">
+
+      <!-- Header -->
+      <mj-section padding="20px 24px 12px">
+        <mj-column>
+          <mj-image
+            width="120px"
+            src="https://erlef.org/images/EEF_Isotipo.png"
+            alt="EEF Logo"
+            align="left"
+            padding="0"
+          />
+          <mj-text mj-class="h1" padding="12px 0 0 0">Attendee Guide</mj-text>
+        </mj-column>
+      </mj-section>
+
+      <mj-section padding="0 24px">
+        <mj-column><mj-divider /></mj-column>
+      </mj-section>
+
+      <!-- CONTENT: editors mainly edit p/ul/li below -->
+      <mj-section padding="0 24px 18px">
+        <mj-column>
+          <mj-text>
+            <!-- ========================= -->
+            <!-- TEMPLATE CONTENT START     -->
+            <!-- Copy/paste blocks + edit text/links only -->
+            <!-- ========================= -->
+
+            <!-- SECTION -->
+            <p class="section-title">Stockholm Unconference, May 19</p>
+
+            <!-- GENERIC CARD -->
+            <div class="card">
+            <h2>Basic Details</h2>
+              <p>Address is:</p>
+              <p><a href="https://www.google.com/maps/place/Viderögatan+3b,+164+40+Kista,+Sweden/@59.4035762,17.9604717,486m/data=!3m2!1e3!4b1!4m6!3m5!1s0x465f9e918ff113cd:0x92b0d10bd7ac5035!8m2!3d59.4035762!4d17.9604717!16s%2Fg%2F11q2n6pc6k?entry=ttu&g_ep=EgoyMDI2MDUxMy4wIKXMDSoASAFQAw%3D%3D">Viderögatan 3b, 164 40 Kista, Sweden</a>
+              </p>
+              <p>At our host <a href="https://entryfy.com/">Entryfy</a><p>
+
+              <p>We will start at 10:00. Feel free to come a bit before.
+              We have not made arrangements for breakfast or snacks. We will be going out for
+              lunch.
+              </p>
+              <h2>The Order</h2>
+              <p>
+                We will start with topic collection.
+                This will happen in the shared
+                <a href="https://docs.google.com/spreadsheets/d/1sCl8MCFSiqcQs4jFtXPybWesoRQchzDMyYDqoq8fSMg">topic spreadsheet</a>.
+                Feel free to open it at any time and put your topic ideas in.
+                </p>
+
+                <p>
+                  The topic types are:
+                  <ul>
+                  <li><b>Teach</b> something you know to others </li>
+                  <li><b>Learn</b> something you want to know that others may like to teach</li>
+                  <li><b>Discuss</b> a topic for open discussion, problem solving</li>
+                  <li><b>Debate</b> two sides of an issue that would be interesting to defend, argue for, convince others</li>
+                  </ul>
+                </p>
+
+                <p>After topics are in, each one will have 2 minutes to explain and answer questions.</p>
+
+                <p>We will then vote by hands on topics. Voting for more than one topic is allowed.</p>
+
+                <p>Based on the votes, we will start with 15 minute sessions through the order.<p>
+
+                <p>We will stop around 1200 and head out for lunch for about 90 minutes.<p>
+
+               </p><p>In case you need, the registration link: <a href="https://luma.com/n71am1d6" target="_blank">on Luma</a>.</p>
+
+                
+            <!-- ========================= -->
+            <!-- TEMPLATE CONTENT END       -->
+            <!-- ========================= -->
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+      <!-- Footer -->
+    <mj-include path="./footer.mjml" type="mjml" />
+    </mj-wrapper>
+  </mj-body>
+</mjml>
