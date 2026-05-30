@@ -1,0 +1,153 @@
+<mjml>
+  <mj-head>
+
+    <!-- Preheader -->
+    <mj-preview>{{PREVIEW_TEXT}}</mj-preview>
+
+    <mj-include path="./common.mjml" type="mjml" />
+    <!-- Centralized styling so editors only touch p/ul/li + links -->
+    <mj-include path="./inline-styles.css" type="css" css-inline="css" />
+    <mj-style inline="inline">
+    </mj-style>
+  </mj-head>
+
+  <!-- Light theme outer -->
+  <mj-body background-color="#fafafa" width="600px">
+
+        <!-- Utility row -->
+    <mj-section padding="24px 12px 12px">
+      <mj-column>
+        <mj-text mj-class="utility" align="center" padding="0 12px">
+          <a href="https::/marketing.erlef.org/news/registry-announce.html" target="_blank">Browser version ➚</a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Main container -->
+    <mj-wrapper background-color="#ffffff" padding="0">
+
+      <!-- Header -->
+      <mj-section padding="20px 24px 12px">
+        <mj-column>
+          <mj-image
+            width="120px"
+            src="https://erlef.org/images/EEF_Isotipo.png"
+            alt="EEF Logo"
+            align="left"
+            padding="0"
+          />
+          <mj-text mj-class="h1" padding="12px 0 0 0">Ecosystem Registry</mj-text>
+          <mj-text mj-class="utility" padding="6px 0 0 0">2026-05-29</mj-text>
+        </mj-column>
+      </mj-section>
+
+      <mj-section padding="0 24px">
+        <mj-column><mj-divider /></mj-column>
+      </mj-section>
+
+      <!-- CONTENT: editors mainly edit p/ul/li below -->
+      <mj-section padding="0 24px 18px">
+        <mj-column>
+          <mj-text>
+            
+            <!-- SECTION -->
+            <p class="section-title">Announcing <a href="registry.erlef.org">registry.erlef.org</a></p>
+
+            <p>
+              Today you'll find something new
+              at <a href="https://registry.erlef.org"
+              target="_new">registry.erlef.org</a>. As the
+              the <b>Erlang Ecosystem Foundation</b> works to serve
+              its members, sponsors and ecosystem we believe in the
+              value of a canonical, central and trusted company
+              registry.
+            </p>
+
+            <p>
+              Together we can answer the key question "who uses this?"
+              Populating this registry with companies working within
+              the Erlang ecosystem, with any of
+              the <a href="https://erlef.org/community/">more than 16
+              languages</a>, will shine a light on the significant
+              scope of our ecosystem.
+            </p>
+            
+            <p>
+              It benefits individual members (as workers and buyers)
+              in finding companies using the technologies they know
+              and trust. It benefits the companies as we can keep them
+              updated on the ongoing work in the ecosystem, inform
+              about risks and mediate opportunities in the
+              community. It also supports foundation efforts when
+              seeking funding by showing evidence of ecosystem size
+              and engagement.
+            </p>
+
+            <p>
+              <b>Help us ensure your company is represented.</b> This
+              is the simplest way to show your support for the
+              ecosystem and the EEF. It has never been easier. By
+              signing up your company, by being the point of contact
+              or finding an appropriate representative to sign you up,
+              you are already helping the ecosystem.
+            </p>
+
+            <p class="sub-title u-underline">
+              How does it work?
+            </p>
+
+            <p>
+              Register the company you work for or find someone who
+              can.  The person who signs the company up will receive
+              an email to verify the email address. Click the
+              appropriate link.  The company is now registered and can
+              be managed by the person who signed up.
+            </p>
+
+            <p>
+              <b>Done</b>. There is no further commitment or effort required.
+            </p>
+
+            <p class="sub-title u-underline">
+              Updates
+            </p>
+            
+            <p>
+              We plan to send out quarterly updates to registered
+              contacts. They will focus on higher-level concerns
+              relevant to technical leadership at companies using the
+              BEAM and related opportunities.
+            </p>
+
+            <p class="sub-title u-underline">
+              The Future
+            </p>
+            
+            <p>
+              This first step creates a vetted list of ecosystem
+              companies mediated through the community trust placed in
+              the EEF. As a non-profit, the EEF serves the community
+              by bringing together individuals and entities with
+              interests in the ecosystem. The intent of the registry
+              is to create awareness and opportunities for all
+              participants.
+            </p>
+            <p>
+              By connecting participants, we see many possible
+              directions for evolution and become an increasingly
+              valuable resource. As an EEF member, please engage in
+              the EEF Slack and talk about what you would like to see
+              and where you would like this to go. Not a member?
+              That's easy to
+              fix: <a href="https://members.erlef.org/join-us">Join
+              the EEF</a>.
+              
+            </p>
+          </mj-text>
+        </mj-column>
+      </mj-section>
+      <mj-include path="./footer.mjml" type="mjml" />
+
+    </mj-wrapper>
+  </mj-body>
+</mjml>

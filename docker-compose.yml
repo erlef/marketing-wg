@@ -1,0 +1,17 @@
+services:
+  mjml:
+    build:
+      context: .
+      dockerfile_inline: |
+        FROM alpine:latest
+        WORKDIR /mjml
+        RUN apk update; apk add npm bash
+        RUN npm init -y && npm install mjml
+        ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/mjml/node_modules/.bin
+    volumes:
+      - type: bind
+        source: .
+        target: /src
+    working_dir: /src
+
+        
