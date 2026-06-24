@@ -13,5 +13,25 @@ services:
         source: .
         target: /src
     working_dir: /src
-
+  dev:
+    build:
+      context: .
+      dockerfile_inline: |
+        FROM mcr.microsoft.com/devcontainers/ruby:3.2-bullseye
+        RUN cat /etc/passwd
+        RUN userdel vscode; useradd -m -u 1000 ${USER}
+        RUN chown -R ${USER} /usr/local
+        USER ${USER}
+        COPY --chown=${USER} Gemfile Gemfile.lock /home/${USER}
+        WORKDIR /home/${USER}
+        RUN bundle install
+    ports:
+      - "4000:4000"
+    working_dir: /src/docs
+    command: /bin/sh -c "bundle exec jekyll serve -H 0.0.0.0"
+    volumes:
+      - type: bind
+        source: .
+        target: /src
+    
         

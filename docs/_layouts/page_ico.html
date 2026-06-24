@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<header class="py-5 bg-brand" role="banner">
+  <div class="container">
+    {{ page.logo }}
+    <h1 class="mb-0 text-white font-weight-bold display-4 text-balance mt-4">
+      {{ page.title }}
+    </h1>
+    {% if page.description %}
+    <h2 class="mb-0 h3 font-weight-normal text-white text-balance">
+        {{ page.description }}
+      </h2>
+    {% endif %}
+    {% include page-series-links.html %}
+  </div>
+</header>
+<main role="main">
+  <section class="p-3 mb-5 bg-white">
+    <div class="container">
+      {{ content }}
+
+      {% include page-series-links.html %}
+    </div>
+  </section>
+</main>
