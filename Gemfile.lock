@@ -302,6 +302,7 @@ DEPENDENCIES
   github-pages
   jekyll-feed
   jekyll-link-attributes
+  jekyll-remote-theme
   jekyll-seo-tag
   jekyll-sitemap (~> 1.4)
   jekyll-spaceship
