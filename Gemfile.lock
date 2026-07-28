@@ -1,5 +1,7 @@
-PATH
-  remote: eef-jekyll-theme
+GIT
+  remote: https://github.com/danj3/eef-jekyll-theme.git
+  revision: d7e62e48fc32b03130b5900b244361cac6a49d1c
+  ref: d7e62e4
   specs:
     eef-jekyll-theme (0.0.0)
       jekyll (> 3.5, < 5.0)

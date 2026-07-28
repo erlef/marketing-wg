@@ -13,7 +13,38 @@ services:
         source: .
         target: /src
     working_dir: /src
+  
   dev:
+    build:
+      context: .
+      dockerfile_inline: |
+        FROM mcr.microsoft.com/devcontainers/ruby:3.2-bullseye
+        RUN cat /etc/passwd
+        RUN userdel vscode; useradd -m -u 1000 ${USER}
+        RUN chown -R ${USER} /usr/local
+        USER ${USER}
+    ports:
+      - "4000:4000"
+    working_dir: /src
+    command: /bin/sh -c "bundle install && (cd docs; bundle exec jekyll serve -H 0.0.0.0)"
+    volumes:
+      - type: bind
+        source: .
+        target: /src
+      - type: volume
+        source: bundle_cache
+        target: /home/${USER}/.bundle
+
+  fix-vol:
+    image: alpine:latest
+    user: root
+    command: chown 1000 /bundle
+    volumes:
+      - type: volume
+        source: bundle_cache
+        target: /bundle
+    
+  dev-with-theme:
     build:
       context: .
       dockerfile_inline: |
@@ -36,3 +67,5 @@ services:
         target: /src
     
         
+volumes:
+  bundle_cache:

@@ -1,0 +1,69 @@
+---
+title: "Atom Exhaustion: A Known Issue That Keeps Becoming a CVE"
+author: Jonatan Männchen
+---
+
+
+<blockquote style="color: orange">
+ Correction (2026-05-29): An earlier version of this post stated that
+ approximately one third of EEF CNA CVEs are caused by atom
+ exhaustion. The correct figure is approximately one tenth. The text
+ below has been updated.
+</blockquote>
+
+Around one third of CVEs published by the Erlang Ecosystem Foundation
+CNA fall into the category of uncontrolled resource consumption
+(CWE-400). In the BEAM ecosystem, roughly one third of those are
+caused by one recurring issue: atom exhaustion, making it
+approximately one tenth of all CVEs. You can find the current
+distribution on the EEF CNA’s Common Weaknesses page.
+
+Atom exhaustion is a denial-of-service vulnerability. Atoms are not garbage collected and are stored in a global atom table, and once it fills up, the VM crashes. Creating atoms from non-finite values, especially user-supplied input, is therefore a latent DoS waiting to happen.
+
+This is not limited to obvious calls such as `binary_to_atom/1`, `list_to_atom/1`, `String.to_atom/1`, or `List.to_atom/1`. Some dangerous patterns are less obvious:
+
+```erlang
+% Erlang: dynamic atom creation through interpolation
+list_to_atom("field_" ++ UserInput)
+```
+
+```elixir
+# Elixir: decoding JSON with atom keys
+Jason.decode(json, keys: :atoms)
+# Elixir: dynamic atom creation through interpolation
+:"field_#{user_input}"
+```
+
+What makes this class of vulnerability persistent is not carelessness. It often appears in code where the input was assumed to be controlled or finite. URI schemes are a good example: it may feel like there are only a few schemes to handle, but if the value comes from external input, the set is no longer guaranteed to be finite.
+
+Creating atoms from input is unsafe unless the set of possible values is finite, known, and enforced.
+The safest approach is to avoid creating new atoms at runtime entirely. Prefer explicit lookup tables when the accepted values are known:
+
+```erlang
+% Erlang
+case Scheme of
+  <<"http">>  -> http;
+  <<"https">> -> https;
+  _           -> error
+end
+```
+
+When a lookup table is not practical, use the safer existing-atom variants, which will raise an error instead of creating a new atom:
+
+```erlang
+% Erlang
+binary_to_existing_atom(Value)
+list_to_existing_atom(Value)
+```
+
+```elixir
+# Elixir
+String.to_existing_atom(value)
+List.to_existing_atom(value)
+```
+
+Linters can help catch these patterns before they become vulnerabilities. For Elixir projects, consider enabling Credo’s `Credo.Check.Warning.UnsafeToAtom`, which flags unsafe calls to `String.to_atom/1`, `List.to_atom/1`, `Module.concat/1,2`, and `Jason.decode/2` with `keys: :atoms`. The check is disabled by default.
+
+If you maintain an Erlang or Elixir project, search your codebase for atom creation from binaries, strings, JSON keys, URI components, headers, and configuration values. This is one of the easiest vulnerability classes to fix before it becomes a CVE.
+
+For more detailed guidance, see the EEF Security Working Group’s guide on [preventing atom exhaustion](https://security.erlef.org/secure_coding_and_deployment_hardening/atom_exhaustion).
