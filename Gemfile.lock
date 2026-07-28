@@ -1,3 +1,10 @@
+PATH
+  remote: eef-jekyll-theme
+  specs:
+    eef-jekyll-theme (0.0.0)
+      jekyll (> 3.5, < 5.0)
+      jekyll-seo-tag (~> 2.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -146,6 +153,7 @@ GEM
       octokit (>= 4, < 7, != 4.4.0)
     jekyll-include-cache (0.2.1)
       jekyll (>= 3.7, < 5.0)
+    jekyll-link-attributes (2.0.1)
     jekyll-mentions (1.6.0)
       html-pipeline (~> 2.3)
       jekyll (>= 3.7, < 5.0)
@@ -169,6 +177,10 @@ GEM
       jekyll (>= 3.8, < 5.0)
     jekyll-sitemap (1.4.0)
       jekyll (>= 3.7, < 5.0)
+    jekyll-spaceship (0.5.3)
+      jekyll (>= 3.6, < 5.0)
+      nokogiri (~> 1.6)
+      rainbow (~> 3.0)
     jekyll-swiss (1.0.0)
     jekyll-theme-architect (0.2.0)
       jekyll (> 3.5, < 5.0)
@@ -251,6 +263,7 @@ GEM
     prism (1.9.0)
     public_suffix (5.1.1)
     racc (1.8.1)
+    rainbow (3.1.1)
     rb-fsevent (0.11.2)
     rb-inotify (0.11.1)
       ffi (~> 1.0)
@@ -283,8 +296,13 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  eef-jekyll-theme!
   github-pages
+  jekyll-feed
+  jekyll-link-attributes
+  jekyll-seo-tag
   jekyll-sitemap (~> 1.4)
+  jekyll-spaceship
   webrick (~> 1.8)
 
 BUNDLED WITH

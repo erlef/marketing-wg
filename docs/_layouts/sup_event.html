@@ -23,8 +23,14 @@ layout: default
 <main role="main">
   <section class="p-3 mb-5 bg-white">
     <div class="container">
-      {{ content }}
-
+      <div class="split-container">
+        <div class="split-left">
+          <a href="{{page.sup_logo_url}}"><img src="{{ page.sup_logo }}" width="200px"></a>
+        </div>
+        <div class="split-right">
+          <p class="mb-0 text-black font-weight-bold text-balance mt-4">{{ content }}</p>
+        </div>
+      </div>
       {% include page-series-links.html %}
     </div>
   </section>

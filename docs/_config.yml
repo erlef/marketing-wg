@@ -1,10 +1,73 @@
-title: EEF Marketing
+title: EEF Community
+url: https://marketing-wg.erlef.org
 description: Serving the Erlang Ecosystem and Community
-remote_theme: erlef/eef-jekyll-theme@v0.2.0
+tagline: News and information about the Erlang Ecosystem
+theme: eef-jekyll-theme
+twitter:
+  username: theerlef
+  card: summary
+logo: /assets/images/eef-header-logo-plain.png
+publisher:
+  type: Organization
+  name: Erlang Ecosystem Foundation
 plugins:
-  - jekyll-remote-theme
+  - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-spaceship
+  - jekyll-link-attributes
 defaults:
+  -
+    scope:
+      path: "wg/cna"
+    values:
+      image: /assets/images/eef/EEF-CNA.png
+      logo: /assets/images/eef/EEF-CNA.png
+      logo_url: /wg/cna
+      layout: page_ico
+      tag: cna
+  -
+    scope:
+      path: "wg/edu"
+    values:
+      logo: /assets/images/eef/EEF-EDU.png
+      logo_url: /wg/edu/
+      layout: page_ico
+      tag: edu
+  -
+    scope:
+      path: "wg/com"
+    values:
+      logo: /assets/images/eef/EEF-COM.png
+      logo_url: /wg/com/
+      layout: page_ico
+      tag: com
+  -
+    scope:
+      path: "wg/sup"
+    values:
+      logo: /assets/images/eef/EEF-SUP.png
+      logo_url: /wg/sup/
+      layout: page_ico
+      tag: sup
+  -
+    scope:
+      path: "wg/sec"
+    values:
+      logo: /assets/images/eef/EEF-SEC.png
+      logo_url: /wg/sec
+      layout: page_ico
+      tag: sec
+  -
+    scope:
+      path: "wg/emb"
+    values:
+      image: /assets/images/eef/EEF-EMB.png
+      logo: /assets/images/eef/EEF-EMB.png
+      logo_url: /wg/emb/
+      layout: page_ico
+      tag: sec
+  
 collections:
   articles:
     output: false

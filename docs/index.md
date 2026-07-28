@@ -1,24 +1,57 @@
 ---
 layout: home
+description: Communication
 ---
 
-Information and Promotion of the Erlang ecosystem by the Erlang Ecosystem Foundation
+<a id="news"/>
+<div class="b-card">
+<div class="b-card-content">
+<h3>News and Articles</h3>
+</div>
+</div>
 
-* [Our CNA in action](/news/CNA-in-action.html)
 
-* [Grant Petition](/news/grant-petition.html)
+<ul>
+{% for item in site.posts %}
 
-* [Ecosystem Company Registry Announcement](/news/registry-announce.html)
+<li>
+{% if item.more_link %}
+  <a href="{{item.more_link}}">see more</a>
+  </li>
+  {% break %}
+{% else %}
+  <a href="{{item.url}}"><span style="display: inline-block; min-width: 3em">{{item.tags | first}}</span> {{item.date | date: "%Y-%m-%d"}} - {{item.title}} </a>
+{% endif %}
+{% if item.more %}<br/>{{item.more}}{% endif %}
+{% if item.img %}<div class="a-card"><div class="a-card-content"><img src="{{item.img}}"/></div></div>{% endif %}
+</li>
+{% endfor %}
+</ul>
 
-* [News: 2026-01](/news/email/2026-01-23.html)
+{% for section in site.data.sections %}
 
-* [Malaga Unconference: 2026-03-19](/events/malaga-unconf.html)
+<a id="{{section.name | slugify}}"/>
+<div class="b-card">
+<div class="b-card-content">
+<h3>{{section.name}}</h3>
+</div>
+</div>
 
-* [Stockholm Unconference: 2026-05-19](/events/2026-05-19-unconf.html)
-  * [Stockholm Attendee Guide](/events/2026-05-19-attendee.html)
-  
-* [FOSDEM 2026 Slides: Build your funding toolkit](/slides/2026-FOSDEM-funding-toolkit.pdf)
+<ul>
+{% for item in section.items %}
 
-* [ElixirConf EU 2026: EEF Rundown](/slides/2026-elixirconf-eu.pdf)
+<li>
+{% if item.more_link %}
+  <a href="{{item.more_link}}">see more</a>
+  </li>
+  {% break %}
+{% else %}
+  <a href="{{item.link}}">{{item.title}}</a>
+{% endif %}
+{% if item.more %}<br/>{{item.more}}{% endif %}
+{% if item.img %}<div class="a-card"><div class="a-card-content"><img src="{{item.img}}"/></div></div>{% endif %}
+</li>
+{% endfor %}
+</ul>
 
-* Newsletters
+{% endfor %}

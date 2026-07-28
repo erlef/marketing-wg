@@ -23,15 +23,16 @@ services:
         RUN chown -R ${USER} /usr/local
         USER ${USER}
         COPY --chown=${USER} Gemfile Gemfile.lock /home/${USER}
+        COPY --chown=${USER} eef-jekyll-theme /home/${USER}/eef-jekyll-theme
         WORKDIR /home/${USER}
         RUN bundle install
     ports:
       - "4000:4000"
-    working_dir: /src/docs
+    working_dir: /src/marketing-wg/docs
     command: /bin/sh -c "bundle exec jekyll serve -H 0.0.0.0"
     volumes:
       - type: bind
-        source: .
+        source: ..
         target: /src
     
         
