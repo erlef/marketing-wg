@@ -3,7 +3,7 @@ short_title: Community
 url: https://com.erlef.org
 description: Serving the Erlang Ecosystem and Community
 tagline: News and information about the Erlang Ecosystem
-remote_theme: danj3/eef-jekyll-theme@v0.3.0
+remote_theme: danj3/eef-jekyll-theme@v0.3.2
 twitter:
   username: theerlef
   card: summary
