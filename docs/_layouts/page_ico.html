@@ -2,30 +2,35 @@
 layout: default
 ---
 
-<header class="py-5 bg-brand" role="banner">
+<header class="py-4 bg-brand" role="banner">
   <div class="container">
     <div class="split-container">
       <div class="split-left">
         <a href="{{page.logo_url}}"><img src="{{ page.logo }}" width="200px"></a>
       </div>
       <div class="split-right">
-        <h1 class="mb-0 text-white font-weight-black display-4 text-balance mt-4">{{ page.title }}</h1>
+        <h2 class="mb-0 text-white font-weight-black display-4 text-balance">{{ page.title }}</h2>
       </div>
     </div>
-    
-    {% if page.description %}
-    <h2 class="mb-0 h3 font-weight-normal text-white text-balance">
-      {{ page.description }}
-    </h2>
-    {% endif %}
   </div>
+    
 </header>
 <main role="main">
-  <section class="p-3 mb-5 bg-white">
+  {% if page.description %}
+  <section class="container bg-white text-black py-4">
+    <h4 class="mb-0 h4 font-weight-normal">
+      {{ page.description }}
+    </h4>
+  </section>
+  {% endif %}
+  
+  <section class="my-5 bg-white">
     <div class="container">
       {{ content }}
-
-      {% include page-series-links.html %}
     </div>
+  </section>
+
+  <section class="py-4 bg-white container">
+    {% include page-series-links.html %}
   </section>
 </main>

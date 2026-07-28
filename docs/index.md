@@ -11,20 +11,13 @@ description: Communication
 </div>
 
 
-<ul>
+<ul class="post-container">
 {% for item in site.posts %}
 
-<li>
-{% if item.more_link %}
-  <a href="{{item.more_link}}">see more</a>
-  </li>
-  {% break %}
-{% else %}
-  <a href="{{item.url}}"><span style="display: inline-block; min-width: 3em">{{item.tags | first}}</span> {{item.date | date: "%Y-%m-%d"}} - {{item.title}} </a>
-{% endif %}
-{% if item.more %}<br/>{{item.more}}{% endif %}
-{% if item.img %}<div class="a-card"><div class="a-card-content"><img src="{{item.img}}"/></div></div>{% endif %}
-</li>
+<li><img src="/assets/images/eef/wg-logo/EEF-{{item.tags | first | upcase}}.svg" height="14px"></li>
+<li><a href="{{item.url}}">{{item.title}} </a></li>
+<li>{{item.date | date: "%Y-%m-%d"}}</li>
+
 {% endfor %}
 </ul>
 
@@ -37,9 +30,10 @@ description: Communication
 </div>
 </div>
 
-<ul>
+<ul class="list-wg-container">
 {% for item in section.items %}
 
+<li>{% if item.wg %}<img src="/assets/images/eef/wg-logo/EEF-{{item.wg | upcase}}.svg" height="14px">{% endif %}</li>
 <li>
 {% if item.more_link %}
   <a href="{{item.more_link}}">see more</a>

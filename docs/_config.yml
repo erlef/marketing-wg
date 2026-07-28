@@ -1,4 +1,5 @@
 title: EEF Community
+short_title: Community
 url: https://marketing-wg.erlef.org
 description: Serving the Erlang Ecosystem and Community
 tagline: News and information about the Erlang Ecosystem
@@ -21,52 +22,62 @@ defaults:
     scope:
       path: "wg/cna"
     values:
-      image: /assets/images/eef/EEF-CNA.png
-      logo: /assets/images/eef/EEF-CNA.png
+      image: /assets/images/eef/wg-logo/EEF-CNA.png
+      logo: /assets/images/eef/wg-logo/EEF-CNA.svg
       logo_url: /wg/cna
       layout: page_ico
       tag: cna
+      wg: cna
   -
     scope:
       path: "wg/edu"
     values:
-      logo: /assets/images/eef/EEF-EDU.png
+      image: /assets/images/eef/wg-logo/EEF-EDU.png
+      logo: /assets/images/eef/wg-logo/EEF-EDU.svg
       logo_url: /wg/edu/
       layout: page_ico
       tag: edu
+      wg: edu
   -
     scope:
       path: "wg/com"
     values:
-      logo: /assets/images/eef/EEF-COM.png
+      image: /assets/images/eef/wg-logo/EEF-COM.png
+      logo: /assets/images/eef/wg-logo/EEF-COM.svg
       logo_url: /wg/com/
       layout: page_ico
       tag: com
+      wg: com
   -
     scope:
       path: "wg/sup"
     values:
-      logo: /assets/images/eef/EEF-SUP.png
+      image: /assets/images/eef/wg-logo/EEF-SUP.png
+      logo: /assets/images/eef/wg-logo/EEF-SUP.svg
       logo_url: /wg/sup/
       layout: page_ico
       tag: sup
+      wg: sup
   -
     scope:
       path: "wg/sec"
     values:
-      logo: /assets/images/eef/EEF-SEC.png
+      image: /assets/images/eef/wg-logo/EEF-SEC.png
+      logo: /assets/images/eef/wg-logo/EEF-SEC.svg
       logo_url: /wg/sec
       layout: page_ico
       tag: sec
+      wg: sec
   -
     scope:
       path: "wg/emb"
     values:
-      image: /assets/images/eef/EEF-EMB.png
-      logo: /assets/images/eef/EEF-EMB.png
+      image: /assets/images/eef/wg-logo/EEF-EMB.png
+      logo: /assets/images/eef/wg-logo/EEF-EMB.svg
       logo_url: /wg/emb/
       layout: page_ico
-      tag: sec
+      tag: emb
+      wg: emb
   
 collections:
   articles:

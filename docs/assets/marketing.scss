@@ -102,6 +102,44 @@ xbody {
   display: block;
 }
 
+ul.list-container {
+    margin-left: 2em;
+    display: grid;
+    grid-template-columns: 1fr;
+    list-style: none;
+    padding: 0
+}
+ul.list-wg-container {
+    margin-left: 2em;
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    list-style: none;
+    padding: 0
+}
+
+ul.post-container {
+    margin-left: 2em;
+    display: grid;
+    grid-template-columns: 70px 5fr 2fr;
+    list-style: none;
+    padding: 0
+}
+
+ul.post-container li.rt {
+    text-align: right;
+}
+
+span.tag {
+    display: inline-block;
+    min-width: 3em;
+}
+
+span.date {
+    display: inline-block;
+    min-width: 6em;
+}
+
+
 @media (max-width: 768px) {
   .split-container {
     flex-direction: column;

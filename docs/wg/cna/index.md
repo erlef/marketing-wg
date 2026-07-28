@@ -14,19 +14,5 @@ The CNA is an EEF administrative operation. Due to the sensitive, critical and c
 
 <h2>News and Articles</h2>
 
-<ul>
-{% for item in site.tags.cna %}
-
-<li>
-{% if item.more_link %}
-  <a href="{{item.more_link}}">see more</a>
-  </li>
-  {% break %}
-{% else %}
-  <a href="{{item.url}}">{{item.date | date: "%Y-%m-%d"}} - {{item.title}} </a>
-{% endif %}
-{% if item.more %}<br/>{{item.more}}{% endif %}
-{% if item.img %}<div class="a-card"><div class="a-card-content"><img src="{{item.img}}"/></div></div>{% endif %}
-</li>
-{% endfor %}
-</ul>
+{% assign item_list=site.tags.cna %}
+{% include post-list.md item_list=item_list %}
