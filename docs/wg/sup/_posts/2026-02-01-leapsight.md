@@ -1,5 +1,4 @@
 ---
-layout: sup_event
 title: Leapsight Support
 sup_logo: /assets/images/sup/leapsight-logo.png
 image: /assets/images/sup/leapsight-logo.png

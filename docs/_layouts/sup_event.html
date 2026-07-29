@@ -5,9 +5,11 @@ layout: default
 <header class="py-4 bg-brand" role="banner">
   <div class="container">
     <div class="split-container">
-      <div class="split-left">
-        <a href="{{page.logo_url}}"><img src="{{ page.logo }}" width="200px"></a>
-      </div>
+        <div class="split-left">
+          <a href="{{page.logo_url}}">
+            <img src="{{ page.logo }}" width="200px">
+          </a>
+        </div>
       <div class="split-right">
         <h2 class="mb-0 text-white font-weight-black display-4 text-balance">{{ page.title }}</h2>
       </div>
@@ -26,9 +28,9 @@ layout: default
   <section class="my-5 bg-white" style="min-height: 15em">
     <div class="container">
       <div class="split-container">
-        <div class="split-left">
-          <a href="{{page.sup_logo_url}}"><img src="{{ page.sup_logo }}" width="200px"></a>
-        </div>
+        <a class="split-left" href="{{page.sup_logo_url}}">
+          <img src="{{ page.sup_logo }}" width="200px">
+        </a>
         <div class="split-right">
           <p class="mb-0 text-black font-weight-bold text-balance mt-4">{{ content }}</p>
         </div>

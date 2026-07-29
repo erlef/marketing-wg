@@ -3,10 +3,11 @@ short_title: Community
 url: https://com.erlef.org
 description: Serving the Erlang Ecosystem and Community
 tagline: News and information about the Erlang Ecosystem
+theme: eef-jekyll-theme
 remote_theme: danj3/eef-jekyll-theme@v0.3.2
 twitter:
   username: theerlef
-  card: summary
+  card: summary_large_image
 logo: /assets/images/eef-header-logo-plain.png
 publisher:
   type: Organization
@@ -23,7 +24,9 @@ defaults:
     scope:
       path: "wg/cna"
     values:
-      image: /assets/images/eef/EEF-CNA.png
+      image:
+        path: /assets/images/eef/EEF-CNA.png
+        alt: CNA Logo
       logo: /assets/images/eef/wg-logo/EEF-CNA.svg
       logo_url: /wg/cna
       layout: page_ico
@@ -33,7 +36,9 @@ defaults:
     scope:
       path: "wg/edu"
     values:
-      image: /assets/images/eef/EEF-EDU.png
+      image:
+        path: /assets/images/eef/EEF-EDU.png
+        alt: Education Logo
       logo: /assets/images/eef/wg-logo/EEF-EDU.svg
       logo_url: /wg/edu/
       layout: page_ico
@@ -43,7 +48,9 @@ defaults:
     scope:
       path: "wg/com"
     values:
-      image: /assets/images/eef/EEF-COM.png
+      image:
+        path: /assets/images/eef/EEF-COM.png
+        alt: Community Logo
       logo: /assets/images/eef/wg-logo/EEF-COM.svg
       logo_url: /wg/com/
       layout: page_ico
@@ -53,7 +60,9 @@ defaults:
     scope:
       path: "wg/sup"
     values:
-      image: /assets/images/eef/EEF-SUP.png
+      image:
+        path: /assets/images/eef/EEF-SUP.png
+        alt: Support Logo
       logo: /assets/images/eef/wg-logo/EEF-SUP.svg
       logo_url: /wg/sup/
       layout: page_ico
@@ -61,9 +70,16 @@ defaults:
       wg: sup
   -
     scope:
+      path: "wg/sup/_posts"
+    values:
+      layout: sup_event
+  -
+    scope:
       path: "wg/sec"
     values:
-      image: /assets/images/eef/EEF-SEC.png
+      image:
+        path: /assets/images/eef/EEF-SEC.png
+        alt: Security Logo
       logo: /assets/images/eef/wg-logo/EEF-SEC.svg
       logo_url: /wg/sec
       layout: page_ico
@@ -73,7 +89,9 @@ defaults:
     scope:
       path: "wg/emb"
     values:
-      image: /assets/images/eef/EEF-EMB.png
+      image:
+        path: /assets/images/eef/EEF-EMB.png
+        alt: Embedded Logo
       logo: /assets/images/eef/wg-logo/EEF-EMB.svg
       logo_url: /wg/emb/
       layout: page_ico

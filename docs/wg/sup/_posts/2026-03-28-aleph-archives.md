@@ -1,5 +1,4 @@
 ---
-layout: sup_event
 title: Aleph Archives Support
 sup_logo: https://sponsor.erlef.org/assets/images/sponsors/aleph.png
 image: https://sponsor.erlef.org/assets/images/sponsors/aleph.png
