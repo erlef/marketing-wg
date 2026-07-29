@@ -17,9 +17,9 @@ between components of the overall community.
 
 ## Branding
 
-Create and shepard a unified brand that reuses visuals across all media accounts and eef sources
+Create and shepherd a unified brand that reuses visuals across all media accounts and eef sources
 
-## Media stratgy
+## Media strategy
 
 Create a cross media presence and regular cadence of content that is
 both interesting and advances the community cohesion goal.
@@ -73,7 +73,7 @@ Double down on iCal publishing for all things:
 * Releases
 * Anniversaries
 
-Maximize time federation and outbound linkages.
+Maximize time federation and out-bound linkages.
 
 # Media Accounts
 
@@ -109,7 +109,7 @@ Maximize time federation and outbound linkages.
 * [CNA CVEs](https://cna.erlef.org/cves/)
 * [Nerves Project](https://nerves-project.org)
 
-### Primary - Commerical
+### Primary - Commercial
 
 * [Dashbit](https://dashbit.co/blog)
 
@@ -140,7 +140,7 @@ Maximize time federation and outbound linkages.
 * Elixir [invite](https://discord.gg/elixir)
 * Elixir FR
 * Gleam [community links](https://gleam.run/community/)
-* Contibutor
+* Contributor
 * ASH [community links](https://ash-hq.org/community)
 * Goatmire [no obvious link](https://goatmire.com)
 * Nerves [community links](https://nerves-project.org/community/)
