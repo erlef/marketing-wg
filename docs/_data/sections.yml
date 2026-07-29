@@ -9,6 +9,9 @@
     - title: Education
       link: /wg/edu/
       wg: EDU
+    - title: Embedded
+      link: /wg/emb/
+      wg: EMB
     - title: Community
       link: /wg/com/
       wg: COM
