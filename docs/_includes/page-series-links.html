@@ -1,0 +1,18 @@
+{% if page.previous.url or page.next.url %}
+  <div class="mt-4 clearfix">
+    {% if page.previous.url %}
+      <a href="{{page.previous.url}}" class="float-left">
+        <span class="sr-only">Previous Page:</span>
+        <span aria-hidden="true">&laquo;</span>
+        {{ page.previous.title }}
+      </a>
+    {% endif %}
+    {% if page.next.url %}
+      <a href="{{page.next.url}}" class="float-right">
+        <span class="sr-only">Next Page:</span>
+        {{ page.next.title }}
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    {% endif %}
+  </div>
+{% endif %}

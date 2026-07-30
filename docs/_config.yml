@@ -1,0 +1,104 @@
+title: EEF Community
+short_title: Community
+url: https://com.erlef.org
+description: Serving the Erlang Ecosystem and Community
+tagline: News and information about the Erlang Ecosystem
+#theme: eef-jekyll-theme
+remote_theme: danj3/eef-jekyll-theme@v0.3.2
+twitter:
+  username: theerlef
+  card: summary_large_image
+logo: /assets/images/eef-header-logo-plain.png
+publisher:
+  type: Organization
+  name: Erlang Ecosystem Foundation
+plugins:
+  - jekyll-remote-theme
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-spaceship
+  - jekyll-link-attributes
+defaults:
+  -
+    scope:
+      path: "wg/cna"
+    values:
+      image:
+        path: /assets/images/eef/EEF-CNA.png
+        alt: CNA Logo
+      logo: /assets/images/eef/wg-logo/EEF-CNA.svg
+      logo_url: /wg/cna
+      layout: page_ico
+      tag: cna
+      wg: cna
+  -
+    scope:
+      path: "wg/edu"
+    values:
+      image:
+        path: /assets/images/eef/EEF-EDU.png
+        alt: Education Logo
+      logo: /assets/images/eef/wg-logo/EEF-EDU.svg
+      logo_url: /wg/edu/
+      layout: page_ico
+      tag: edu
+      wg: edu
+  -
+    scope:
+      path: "wg/com"
+    values:
+      image:
+        path: /assets/images/eef/EEF-COM.png
+        alt: Community Logo
+      logo: /assets/images/eef/wg-logo/EEF-COM.svg
+      logo_url: /wg/com/
+      layout: page_ico
+      tag: com
+      wg: com
+  -
+    scope:
+      path: "wg/sup"
+    values:
+      image:
+        path: /assets/images/eef/EEF-SUP.png
+        alt: Support Logo
+      logo: /assets/images/eef/wg-logo/EEF-SUP.svg
+      logo_url: /wg/sup/
+      layout: page_ico
+      tag: sup
+      wg: sup
+  -
+    scope:
+      path: "wg/sup/_posts"
+    values:
+      layout: sup_event
+  -
+    scope:
+      path: "wg/sec"
+    values:
+      image:
+        path: /assets/images/eef/EEF-SEC.png
+        alt: Security Logo
+      logo: /assets/images/eef/wg-logo/EEF-SEC.svg
+      logo_url: /wg/sec
+      layout: page_ico
+      tag: sec
+      wg: sec
+  -
+    scope:
+      path: "wg/emb"
+    values:
+      image:
+        path: /assets/images/eef/EEF-EMB.png
+        alt: Embedded Logo
+      logo: /assets/images/eef/wg-logo/EEF-EMB.svg
+      logo_url: /wg/emb/
+      layout: page_ico
+      tag: emb
+      wg: emb
+  
+collections:
+  articles:
+    output: false
+    sort_by: date

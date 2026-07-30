@@ -1,0 +1,49 @@
+- name: Working Groups
+  items:
+    - title: CNA (CVE Numbering Authority)
+      link: /wg/cna
+      wg: CNA
+    - title: Security
+      link: /wg/sec/
+      wg: SEC
+    - title: Education
+      link: /wg/edu/
+      wg: EDU
+    - title: Embedded
+      link: /wg/emb/
+      wg: EMB
+    - title: Community
+      link: /wg/com/
+      wg: COM
+    - title: Support
+      link: /wg/sup/
+      wg: SUP
+- name: Events
+  items:
+    - title: "Malaga Unconference: 2026-03-19"
+      link: /events/malaga-unconf.html
+      wg: COM
+    - title: "Stockholm Unconference: 2026-05-19"
+      link: /events/2026-05-19-unconf.html
+      wg: COM
+    - title: Stockholm Attendee Guide
+      link: /events/2026-05-19-attendee.html
+      wg: COM
+    - more_link: /events
+    - title: "FOSDEM 2026 Slides: Build your funding toolkit"
+      link: /slides/2026-FOSDEM-funding-toolkit.pdf
+      wg: COM
+    - title: "ElixirConf EU 2026: EEF Rundown"
+      link: /slides/2026-elixirconf-eu.pdf
+      wg: COM
+- name: Email Newsletter
+  items:
+    - title: Grant Petition
+      link: /news/grant-petition.html
+      wg: SEC
+    - title: Ecosystem Company Registry Announcement
+      link: /news/registry-announce.html
+      wg: SUP
+    - title: "News: 2026-01"
+      link: /news/email/2026-01-23.html
+      wg: COM

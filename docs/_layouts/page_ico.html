@@ -1,0 +1,46 @@
+---
+layout: default
+---
+
+<header class="py-4 bg-brand" role="banner">
+  <div class="container">
+    <div class="split-container">
+      <div class="split-left">
+        <a href="{{page.logo_url}}"><img src="{{ page.logo }}" width="200px"></a>
+      </div>
+      <div class="split-right">
+        <h2 class="mb-0 text-white font-weight-black display-4 text-balance">{{ page.title }}</h2>
+      </div>
+    </div>
+  </div>
+    
+</header>
+<main role="main">
+  {% if page.description %}
+  <section class="container bg-white text-black py-4">
+    <h4 class="mb-0 h4 font-weight-normal">
+      {{ page.description }}
+    </h4>
+  </section>
+  {% endif %}
+  
+  <section class="my-5 bg-white">
+    {% if page.date %}
+    <div class="container mb-3">
+      {% if page.author %}
+      by {{ page.author }}
+      {% else %}
+      Published 
+      {% endif %}
+      on {{ page.date | date: "%b %d, %Y"}}
+    </div>
+    {% endif %}
+    <div class="container">
+      {{ content }}
+    </div>
+  </section>
+
+  <section class="py-4 bg-white container">
+    {% include page-series-links.html %}
+  </section>
+</main>
