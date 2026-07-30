@@ -79,9 +79,9 @@ Maximize time federation and out-bound linkages.
 
 ## EEF Owned
 
-* LinkedIn
-* Twitter (theerlef)
-* BlueSky (@theerlef.bsky.social)
+* LinkedIn #elixir
+* Twitter (theerlef) #elixir
+* BlueSky (@theerlef.bsky.social) #elixirlang
 * Mastodon
 * Vimeo (marketing@erlef.org) - nothing published
 * YouTube
