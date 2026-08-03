@@ -17,11 +17,11 @@ layout: default
 </header>
 <main role="main">
   {% if page.description %}
-  <section class="container bg-white text-black py-4">
-    <h4 class="mb-0 h4 font-weight-normal">
-      {{ page.description }}
-    </h4>
-  </section>
+  {% if page.description_image %}
+  {% include page-image-description.html %}
+  {% else %}
+  {% include page-description.html %}
+  {% endif %}
   {% endif %}
   
   <section class="my-5 bg-white">

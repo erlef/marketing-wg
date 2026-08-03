@@ -1,8 +1,11 @@
 ---
 title: UnConference Explained
 description: EEF organized UnConferences are community participation events. This is how they work.
+description_image: /assets/images/eef/unconference.svg
 author: Daniel Janowski
+image: /assets/images/eef/unconference.png
 ---
+
 
 # Basics
 
