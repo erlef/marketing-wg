@@ -1,8 +1,7 @@
 ---
 title: Aleph Archives Support
-sup_logo: https://sponsor.erlef.org/assets/images/sponsors/aleph.png
-image: https://sponsor.erlef.org/assets/images/sponsors/aleph.png
-xsup_logo_url: /sponsors/aleph-archives.html
+sup_logo: /assets/images/sup/aleph.png
+image: /assets/images/sponsors/square-aleph.png
 sup_logo_url: https://aleph-archives.com
 ---
   Aleph Archives has renewed their support for the EEF in 2026.

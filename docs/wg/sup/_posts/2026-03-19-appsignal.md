@@ -1,7 +1,7 @@
 ---
 title: AppSignal Support
 sup_logo: /assets/images/sup/appsignal.svg
-image: /assets/images/sup/appsignal.png
+image: /assets/images/sup/square-appsignal.png
 sup_logo_url: https://www.appsignal.com
 ---
   AppSignal has joined our family of financial supporters in 2026.

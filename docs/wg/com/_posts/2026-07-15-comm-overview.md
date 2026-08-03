@@ -145,3 +145,7 @@ Maximize time federation and out-bound linkages.
 * Goatmire [no obvious link](https://goatmire.com)
 * Nerves [community links](https://nerves-project.org/community/)
 
+## reddit
+* https://www.reddit.com/r/elixir/
+* https://www.reddit.com/r/erlang/
+* https://www.reddit.com/r/gleamlang/

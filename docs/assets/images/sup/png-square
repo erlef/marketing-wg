@@ -1,0 +1,10 @@
+#!/bin/sh
+
+input=$1
+output=square-$input
+
+extent=$(magick $input -format "%[fx:w/h > 1 ? w : h]x%[fx:w/h > 1 ? w : h]" info:)
+
+magick $input -gravity center -background none \
+  -extent "$extent" \
+  $output

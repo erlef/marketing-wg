@@ -31,6 +31,8 @@ xbody {
 
 .bg-brand { background-color: #2a99e2 }
 
+.display-25 { font-size: 2.5rem; };
+
 .a-card {
     width: 260px;
     height: 150px;
@@ -78,6 +80,27 @@ xbody {
 }
 
 .b-card-content h3 { margin-bottom: 0px; font-weight: 700 }
+
+.c-card {
+    max-width: 50em;
+    margin-bottom: 0;
+    margin-top: 0;
+    border-radius: 16px;
+    background: #000;
+    border: 1px solid #ddd;
+    transform: skewX(-4deg);   /* slant the whole card */
+    overflow: hidden;
+}
+
+.c-card-content {
+    transform: skewX(4deg);   /* cancel the skew for the content */
+    padding: 0;
+    height: 100%;
+    color: #fff;
+    font-weight: 900;
+    font-size: 42px;
+    text-transform: uppercase;
+}
 
 .split-container {
   display: flex;

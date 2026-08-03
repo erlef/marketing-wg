@@ -19,3 +19,8 @@ cd docs
 bundle exec jekyll serve
 ```
 
+# Resources
+
+[liquid templates](https://shopify.github.io/liquid/)
+
+[using seo-tags](https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md)

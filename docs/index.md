@@ -1,6 +1,7 @@
 ---
 layout: home
-description: Communication
+title: Communication
+description: Communication for the EEF community
 ---
 
 <a id="news"/>
