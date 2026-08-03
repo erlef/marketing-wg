@@ -30,12 +30,15 @@
       link: /events/2026-05-19-attendee.html
       wg: COM
     - more_link: /events
-    - title: "FOSDEM 2026 Slides: Build your funding toolkit"
-      link: /slides/2026-FOSDEM-funding-toolkit.pdf
-      wg: COM
+- name: Slides
+  items:
     - title: "ElixirConf EU 2026: EEF Rundown"
       link: /slides/2026-elixirconf-eu.pdf
       wg: COM
+    - title: "FOSDEM 2026 Slides: Build your funding toolkit"
+      link: /slides/2026-FOSDEM-funding-toolkit.pdf
+      wg: COM
+  
 - name: Email Newsletter
   items:
     - title: Grant Petition

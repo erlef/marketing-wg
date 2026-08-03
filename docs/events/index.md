@@ -1,6 +1,7 @@
 ---
 layout: home
-description: Events
+title: Events
+tag: none
 ---
 
 {% assign events = site.data.sections | where: "name", "Events" | first%}

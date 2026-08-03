@@ -20,8 +20,7 @@ plugins:
   - jekyll-spaceship
   - jekyll-link-attributes
 defaults:
-  -
-    scope:
+  - scope:
       path: "wg/cna"
     values:
       image:
@@ -32,8 +31,7 @@ defaults:
       layout: page_ico
       tag: cna
       wg: cna
-  -
-    scope:
+  - scope:
       path: "wg/edu"
     values:
       image:
@@ -44,8 +42,7 @@ defaults:
       layout: page_ico
       tag: edu
       wg: edu
-  -
-    scope:
+  - scope:
       path: "wg/com"
     values:
       image:
@@ -56,8 +53,7 @@ defaults:
       layout: page_ico
       tag: com
       wg: com
-  -
-    scope:
+  - scope:
       path: "wg/sup"
     values:
       image:
@@ -68,13 +64,11 @@ defaults:
       layout: page_ico
       tag: sup
       wg: sup
-  -
-    scope:
+  - scope:
       path: "wg/sup/_posts"
     values:
       layout: sup_event
-  -
-    scope:
+  - scope:
       path: "wg/sec"
     values:
       image:
@@ -85,8 +79,7 @@ defaults:
       layout: page_ico
       tag: sec
       wg: sec
-  -
-    scope:
+  - scope:
       path: "wg/emb"
     values:
       image:
@@ -97,7 +90,7 @@ defaults:
       layout: page_ico
       tag: emb
       wg: emb
-  
+      
 collections:
   articles:
     output: false
