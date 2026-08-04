@@ -3,6 +3,15 @@
 input=$1
 output=square-$input
 
+if [ ! -f "$input" ]; then
+    echo "input doesn't exist"
+    exit 1
+fi
+if [ -f "$output" ]; then
+    echo "output $output exists, aborting"
+    exit 1
+fi
+
 extent=$(magick $input -format "%[fx:w/h > 1 ? w : h]x%[fx:w/h > 1 ? w : h]" info:)
 
 magick $input -gravity center -background none \

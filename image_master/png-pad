@@ -1,0 +1,15 @@
+#!/bin/sh
+
+input="$1"
+output="border-$input"
+
+if [ ! -f "$input" ]; then
+    echo "input doesn't exist"
+    exit 1
+fi
+if [ -f "$output" ]; then
+    echo "output $output exists, aborting"
+    exit 1
+fi
+
+magick $input -bordercolor none -border 30x30 $output

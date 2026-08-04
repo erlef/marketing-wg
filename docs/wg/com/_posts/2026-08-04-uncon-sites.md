@@ -3,7 +3,7 @@ title: UnCon Venues
 description: "What's needed for a venue to work for an UnCon"
 description_image: /assets/images/eef/unconference.svg
 author: Daniel Janowski
-image: /assets/images/eef/unconference.png
+image: /assets/images/eef/border-unconference.png
 ---
 
 A good venue for an UnCon includes:

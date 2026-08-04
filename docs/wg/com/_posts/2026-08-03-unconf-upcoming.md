@@ -3,7 +3,7 @@ title: UnConferences Upcoming 2026
 description: ElixirConf-Sept 9 in Chicago, CodeBEAM Europe-Oct 20 in the Netherlands
 description_image: /assets/images/eef/unconference.svg
 author: Daniel Janowski
-image: /assets/images/eef/unconference.png
+image: /assets/images/eef/border-unconference.png
 ---
 
 UnConferences are open for sign-up at
