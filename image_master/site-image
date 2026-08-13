@@ -1,0 +1,71 @@
+#!/bin/bash
+
+inkscape="/Applications/Inkscape.app/Contents/MacOS/inkscape"
+
+if [ ! -x "$inkscape" ]; then
+    echo "works on macos with inkscape. install"
+    exit 1
+fi
+
+svg_16x9_300_png() {
+    local input="$1"
+    local output1="${input##*/}"
+    local outb="${output1%.svg}"
+    local output="300-$outb.png"
+    local output16="300-16x9-$outb.png"
+    if [ -f "$output" -o -f "$output16" ]; then echo "output $output already exists"; return 1; fi
+
+    local -a a=($($inkscape -H -W "$input"))
+    local overwide=$(bc -le "( ${a[0]} / ${a[1]} ) > 1.777")
+    if [ "$overwide" = 1 ]; then
+        
+        $inkscape --export-filename="${output}" \
+                  --export-type=png \
+                  --export-area-page \
+                  --export-width 280 \
+                  "${input}"
+    else
+        $inkscape --export-filename="${output}" \
+                  --export-type=png \
+                  --export-area-page \
+                  --export-height 156 \
+                  "${input}"
+    fi
+    # 300x168
+    
+    magick "${output}" -background none -gravity center -extent 280x156  -bordercolor none -border 10x6 "${output16}"
+}
+
+svg_16x9_300_png2() {
+    local input="$1"
+    local output1=${input##*/}
+    local outb="${output1%.svg}"
+    local output="300-$outb.png"
+    local output16="300-16x9-$outb.png"
+    if [ -f $output -o -f $output16 ]; then echo "output $output already exists"; return 1; fi
+
+    local -a a=($($inkscape -H -W $input))
+    local overwide=$(bc -le "( ${a[0]} / ${a[1]} ) > 1.777")
+    if [ "$overwide" = 1 ]; then
+        
+        $inkscape --export-filename=${output} \
+                  --export-type=png \
+                  --export-area-page \
+                  --export-width 300 \
+                  ${input}
+    else
+        $inkscape --export-filename=${output} \
+                  --export-type=png \
+                  --export-area-page \
+                  --export-height 168 \
+                  ${input}
+    fi
+
+    extent=$(magick $output -format "%[fx:w/h > 1.777 ? w : h]x%[fx:w/h > 1.777 ? w : h]" info:)
+
+    magick $output -gravity center -background none \
+           -extent "$extent" \
+           $output16
+}
+
+"$@"

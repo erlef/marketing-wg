@@ -24,7 +24,7 @@ defaults:
       path: "wg/cna"
     values:
       image:
-        path: /assets/images/eef/EEF-CNA.png
+        path: /assets/images/eef/300-16x9-EEF-CNA.png
         alt: CNA Logo
       logo: /assets/images/eef/wg-logo/EEF-CNA.svg
       logo_url: /wg/cna
@@ -35,7 +35,7 @@ defaults:
       path: "wg/edu"
     values:
       image:
-        path: /assets/images/eef/EEF-EDU.png
+        path: /assets/images/eef/300-16x9-EEF-EDU.png
         alt: Education Logo
       logo: /assets/images/eef/wg-logo/EEF-EDU.svg
       logo_url: /wg/edu/
@@ -46,7 +46,7 @@ defaults:
       path: "wg/com"
     values:
       image:
-        path: /assets/images/eef/EEF-COM.png
+        path: /assets/images/eef/300-16x9-EEF-COM.png
         alt: Community Logo
       logo: /assets/images/eef/wg-logo/EEF-COM.svg
       logo_url: /wg/com/
@@ -57,7 +57,7 @@ defaults:
       path: "wg/sup"
     values:
       image:
-        path: /assets/images/eef/EEF-SUP.png
+        path: /assets/images/eef/300-16x9-EEF-SUP.png
         alt: Support Logo
       logo: /assets/images/eef/wg-logo/EEF-SUP.svg
       logo_url: /wg/sup/
@@ -72,7 +72,7 @@ defaults:
       path: "wg/sec"
     values:
       image:
-        path: /assets/images/eef/EEF-SEC.png
+        path: /assets/images/eef/300-16x9-EEF-SEC.png
         alt: Security Logo
       logo: /assets/images/eef/wg-logo/EEF-SEC.svg
       logo_url: /wg/sec
@@ -83,7 +83,7 @@ defaults:
       path: "wg/emb"
     values:
       image:
-        path: /assets/images/eef/EEF-EMB.png
+        path: /assets/images/eef/300-16x9-EEF-EMB.png
         alt: Embedded Logo
       logo: /assets/images/eef/wg-logo/EEF-EMB.svg
       logo_url: /wg/emb/
