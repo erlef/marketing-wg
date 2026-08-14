@@ -51,12 +51,12 @@
           <mj-text>
             
             <!-- SECTION -->
-            <p class="section-title">Announcing <a href="registry.erlef.org">registry.erlef.org</a></p>
+            <p class="section-title">Announcing <a href="https://registry.erlef.org" target="_blank">registry.erlef.org</a></p>
 
             <p>
               Today you'll find something new
               at <a href="https://registry.erlef.org"
-              target="_new">registry.erlef.org</a>. As the
+              target="_blank">registry.erlef.org</a>. As the
               the <b>Erlang Ecosystem Foundation</b> works to serve
               its members, sponsors and ecosystem we believe in the
               value of a canonical, central and trusted company
