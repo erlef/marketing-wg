@@ -1,12 +1,17 @@
 source 'https://rubygems.org'
 
-gem 'jekyll-remote-theme'
-gem 'github-pages', group: :jekyll_plugins
-gem "jekyll-sitemap", "~> 1.4", group: :jekyll_plugins
-gem 'eef-jekyll-theme', git: "https://github.com/danj3/eef-jekyll-theme.git", ref: "d7e62e4"
-gem 'jekyll-link-attributes', group: :jekyll_plugins
-gem 'jekyll-feed', group: :jekyll_plugins
-gem 'jekyll-spaceship', group: :jekyll_plugins
-gem 'jekyll-seo-tag', group: :jekyll_plugins
+gem "jekyll", "~> 3.10.0"
 
-gem "webrick", "~> 1.8"
+group :jekyll_plugins do
+  gem 'jekyll-remote-theme'
+  gem 'github-pages'
+  gem "jekyll-sitemap"
+  gem 'jekyll-link-attributes'
+  gem 'jekyll-feed'
+  gem 'jekyll-spaceship'
+  gem 'jekyll-seo-tag'
+end
+
+#gem "webrick", "~> 1.8"
+gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
+gem "kramdown-parser-gfm"

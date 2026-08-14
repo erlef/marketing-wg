@@ -18,10 +18,9 @@ services:
     build:
       context: .
       dockerfile_inline: |
-        FROM mcr.microsoft.com/devcontainers/ruby:3.2-bullseye
-        RUN cat /etc/passwd
-        RUN userdel vscode; useradd -m -u 1000 ${USER}
-        RUN chown -R ${USER} /usr/local
+        FROM ruby:3.3-bookworm
+        RUN apt update
+        RUN useradd -m -u 1000 ${USER}
         USER ${USER}
     ports:
       - "4000:4000"
@@ -34,7 +33,10 @@ services:
       - type: volume
         source: bundle_cache
         target: /home/${USER}/.bundle
-
+      - type: bind
+        source: ../eef-jekyll-theme
+        target: /eef-jekyll-theme
+        
   fix-vol:
     image: alpine:latest
     user: root
@@ -43,29 +45,6 @@ services:
       - type: volume
         source: bundle_cache
         target: /bundle
-    
-  dev-with-theme:
-    build:
-      context: .
-      dockerfile_inline: |
-        FROM mcr.microsoft.com/devcontainers/ruby:3.2-bullseye
-        RUN cat /etc/passwd
-        RUN userdel vscode; useradd -m -u 1000 ${USER}
-        RUN chown -R ${USER} /usr/local
-        USER ${USER}
-        COPY --chown=${USER} Gemfile Gemfile.lock /home/${USER}
-        COPY --chown=${USER} eef-jekyll-theme /home/${USER}/eef-jekyll-theme
-        WORKDIR /home/${USER}
-        RUN bundle install
-    ports:
-      - "4000:4000"
-    working_dir: /src/marketing-wg/docs
-    command: /bin/sh -c "bundle exec jekyll serve -H 0.0.0.0"
-    volumes:
-      - type: bind
-        source: ..
-        target: /src
-    
-        
+            
 volumes:
   bundle_cache:
