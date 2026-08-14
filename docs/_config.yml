@@ -7,7 +7,7 @@ tagline: News and information about the Erlang Ecosystem
 remote_theme: danj3/eef-jekyll-theme@v0.3.2
 twitter:
   username: theerlef
-  card: summary_large_image
+  card: summary
 logo: /assets/images/eef-header-logo-plain.png
 publisher:
   type: Organization
