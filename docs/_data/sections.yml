@@ -12,6 +12,9 @@
     - title: Embedded
       link: /wg/emb/
       wg: EMB
+    - title: Build and Packaging
+      link: /wg/bld/
+      wg: BLD
     - title: Community
       link: /wg/com/
       wg: COM

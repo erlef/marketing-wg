@@ -10,3 +10,4 @@ Check out the posts, provide feedback.
 
 * [LinkedIn Post](https://www.linkedin.com/posts/erlang-rebar3-opensource-share-7499253662662283265-ZUEu/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAANKJYQB8BT87YYdHsuc9mJ31Wb6bsEElaI)
 
+* [Erlang Forums Post](https://erlangforums.com/t/rebar-v4-which-rebar-plugins-should-we-prioritize-for-compatibility-testing/5908), for feedback and discussion
