@@ -23,7 +23,7 @@ services:
         RUN useradd -m -u 1000 ${USER}
         USER ${USER}
     ports:
-      - "4000:4000"
+      - "4001:4000"
     working_dir: /src
     command: /bin/sh -c "bundle install && (cd docs; bundle exec jekyll serve -H 0.0.0.0)"
     volumes:
