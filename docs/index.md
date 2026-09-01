@@ -13,7 +13,7 @@ description: Communication for the EEF community
 
 
 <ul class="post-container">
-{% for item in site.posts %}
+{% for item in site.posts limit: 15 %}
 
 <li><img src="/assets/images/eef/wg-logo/EEF-{{item.tags | first | upcase}}.svg" height="14px"></li>
 <li><a href="{{item.url}}">{{item.title}} </a></li>
@@ -21,6 +21,8 @@ description: Communication for the EEF community
 
 {% endfor %}
 </ul>
+
+<div style="margin-left: 6em"><a href="/more-news/">More articles...</a></div>
 
 {% for section in site.data.sections %}
 
