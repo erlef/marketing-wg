@@ -1,6 +1,7 @@
 ---
 title: Our self() Defense
 description: Defending our ecosystem against AI threats
+author: Dan Janowski
 ---
 Vulnerability scanning with AI has passed from security slop to legitimate, and with it is security code analysis at scale. This is now an activity that cannot be ignored since these same tools can be used for attack.
 
