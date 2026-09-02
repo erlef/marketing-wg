@@ -90,3 +90,13 @@ Since we cannot know how long this period will last, nor how many vulnerabilitie
 - Easier and more accessible reporting such as directly through hex - **Live as of August 18th**
 
 
+## EEF Security Engineers in Residence
+
+| ![Jonatan Männchen, EEF CISO, SEiR](/assets/images/people/Jonatan-Männchen.jpeg){: width="300"}  | ![Peter Ullrich, SEiR](/assets/images/people/Peter-Ullrich.jpeg){: width="300"}  | ![Eric Meadows-Jönsson, Hex](/assets/images/people/Eric-Meadows-Jönsson.jpeg){: width="300"}  |
+|:-:|:-:|:-:|
+| Jonatan Männchen | Peter Ullrich  | Eric Meadows-Jönsson |
+| EEF CISO, SEiR  | SEiR | SEiR, Hex Core Team |
+
+
+
+
