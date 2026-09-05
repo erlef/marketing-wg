@@ -2,6 +2,8 @@
 title: UnCon(ference) past topics
 description: A list of suggested topics from previous UnCon's, a subset were actually discussed
 author: Dan Janowski
+description_image: /assets/images/eef/unconference.svg
+image: /assets/images/eef/border-unconference.png
 ---
 These past attendee submitted topics may inspire you to attend or inspire a topic for you to submit.
 
