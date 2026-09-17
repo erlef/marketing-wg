@@ -14,11 +14,20 @@ if [ ! -f "$input" ]; then
 fi
 
 output1=${input##*/}
-output="${output1%.svg}.png"
+output="${output1%.svg}-1200.png"
 
 $inkscape \
     --export-filename=$output \
     --export-type=png \
     --export-area-page \
     --export-width 1200 \
+    $input
+
+output="${output1%.svg}-300.png"
+
+$inkscape \
+    --export-filename=$output \
+    --export-type=png \
+    --export-area-page \
+    --export-width 300 \
     $input
