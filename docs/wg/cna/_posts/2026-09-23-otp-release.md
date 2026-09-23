@@ -38,5 +38,5 @@ results in quadratic consumption of CPU resources during decoding.
 
 This can be triggered during X.509 certificate handling, as an initial
 step during TLS handshake. This targets connecting clients (malicious
-server) or during servers during mutual TLS. This being an early
+server) or servers during mutual-TLS. This being an early
 handshake step in TLS, it is prior to authentication.
