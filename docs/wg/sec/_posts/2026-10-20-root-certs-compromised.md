@@ -13,6 +13,6 @@ Do the following:
 * System CA certificate store (update OS or container images/packages) to include new Mozilla records
 * Update [ca-store package](https://hex.pm/packages/castore) at least 1.0.22
 * Update [certifi](https://hex.pm/packages/certifi) when it is updated past 2.17.0
-* Update [hex](mix local.hex --force)
+* Update hex: `mix local.hex --force`
 
 More information about the [eMudhra problem](https://emudhra.we-have-a-problem.com/).
