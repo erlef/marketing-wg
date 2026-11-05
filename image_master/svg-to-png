@@ -13,8 +13,8 @@ if [ ! -f "$input" ]; then
     exit
 fi
 
-output1=${input##*/}
-output="${output1%.svg}-1200.png"
+input1=${input##*/}
+output="${input%.svg}-1200.png"
 
 $inkscape \
     --export-filename=$output \
@@ -23,7 +23,10 @@ $inkscape \
     --export-width 1200 \
     $input
 
-output="${output1%.svg}-300.png"
+pngoutput="${output%/*}/${input1%.svg}-1200-border.png"
+magick $output -bordercolor none -border 30x30 $pngoutput
+
+output="${input%.svg}-300.png"
 
 $inkscape \
     --export-filename=$output \
