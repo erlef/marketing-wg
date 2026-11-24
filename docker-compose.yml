@@ -26,6 +26,8 @@ services:
       - "4001:4000"
     working_dir: /src
     command: /bin/sh -c "bundle install && (cd docs; bundle exec jekyll serve -H 0.0.0.0)"
+    depends_on:
+      - fix-vol
     volumes:
       - type: bind
         source: .
