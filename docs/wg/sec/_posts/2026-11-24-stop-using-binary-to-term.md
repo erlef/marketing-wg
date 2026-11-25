@@ -11,6 +11,6 @@ The problem expands if functions or MFAs are in deserialized data. Add to that E
 
 If you still want to use term binaries, here is your check list:
 
-1. Read, understand, adhere to [guidance for serialization](https://security.erlef.org/secure_coding_and_deployment_hardening/serialisation.html)
+1. Read, understand, adhere to [guidance for serialization](https://security.erlef.org/secure_coding_and_deployment_hardening/serialisation.html) and [erlang secure coding DSG-011](https://www.erlang.org/doc/system/secure_coding.html#rule-dsg-011)
 2. Validate the data you receive, always
 3. Sign and/or encrypt data you may round trip outside the runtime, i.e. browser cookies, parameters. In Elixir, use [Phoenix.Token](https://phoenix.hexdocs.pm/Phoenix.Token.html#functions) or [Plug.Crypto](https://plug-crypto.hexdocs.pm/2.2.1/Plug.Crypto.html#functions) with `sign`/`verify` or `encrypt`/`decrypt`
