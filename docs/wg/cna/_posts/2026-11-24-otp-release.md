@@ -25,7 +25,6 @@ The following OTP releases resolve these CVEs:
 - [27.3.4.20](https://www.erlang.org/patches/OTP-27.3.4.20)
 
 # Description
-(Note: details below are generated from CVE reports)
 
 The best approach is to upgrade to OTP 29.1.3, 28.5.0.9, or 27.3.4.20. However, if you cannot immediately upgrade, take note of "Pre-upgrade mitigation" under each issue below.
 
