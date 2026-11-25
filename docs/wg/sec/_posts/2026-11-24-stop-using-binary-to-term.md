@@ -7,7 +7,7 @@ You know it. I know it. binary_to_term and native serialization support (e.g. DE
 
 The simplest solution is to *not* use binary_to_term. Use a constrained/limited encoding, e.g. JSON, and apply input validation.
 
-The problem expands if functions or MFAs are in deserialized data. Add to that Elixir Protocols, (Enumerable, Access, Inspect, String.Chars), an additional layer of indirection can lead to unexpected/unintended evalutation of terms. Protocol implementations, the defaults or those provided anywhere in dependencies, become fertile ground for exploitation. These are all reasons to be vigilant on how term binaries are handled.
+The problem expands if functions or MFAs are in deserialized data. Add to that Elixir Protocols, (Enumerable, Access, Inspect, String.Chars), an additional layer of indirection can lead to unexpected/unintended evaluation of terms. Protocol implementations, the defaults or those provided anywhere in dependencies, become fertile ground for exploitation. These are all reasons to be vigilant on how term binaries are handled.
 
 If you still want to use term binaries, here is your check list:
 
