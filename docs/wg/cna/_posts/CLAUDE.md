@@ -13,8 +13,7 @@ page's `<h1>` verbatim (strip `<wbr>`).
 
 ## `# Description` section
 
-Starts with the line `(Note: details below are generated from CVE reports)`,
-then a blank line and:
+Starts with:
 
 > The best approach is to upgrade to OTP <versions from `# Available Versions`>.
 > However, if you cannot immediately upgrade, take note of "Pre-upgrade
